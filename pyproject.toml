@@ -8,6 +8,13 @@ version = "3.0.0.dev1"
 description = "Release-aware quantitative research with explicit evidence gates"
 requires-python = ">=3.11"
 
+[project.optional-dependencies]
+public-test = [
+    "numpy>=1.26,<3",
+    "pandas>=2.2,<3",
+    "pytest>=8,<10",
+]
+
 [tool.setuptools.packages.find]
 where = ["src"]
 

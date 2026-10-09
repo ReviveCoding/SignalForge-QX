@@ -1,10 +1,27 @@
 # SignalForge-QX
 
+[![Public dataset-free checks](https://github.com/ReviveCoding/SignalForge-QX/actions/workflows/public-smoke.yml/badge.svg)](https://github.com/ReviveCoding/SignalForge-QX/actions/workflows/public-smoke.yml)
+
 **Evidence-gated quantitative forecasting research with source-age-aware models, reproducible GPU experiments, probabilistic calibration, and model-risk diagnostics.**
 
 SignalForge-QX studies whether public macroeconomic, energy-inventory, positioning, and fund disclosures improve weekly multi-asset forecasts when publication timing, revisions, missingness, and model selection are treated explicitly. This publication contains the original research code and the isolated SIA, BAR, provenance, OOF, and model-risk extensions through **v3.8**.
 
 > **Research status:** The stated historical development and software-diagnostic scopes are complete. The system is **not** a qualified trading strategy. Authenticated original-publication Tier-A clocks, full P1 economic data, independent scientific freeze, sealed final evaluation, and genuine future forecast validation remain unqualified.
+
+## Quickstart: public, data-free verification
+
+```sh
+python scripts/public_evidence_smoke.py
+python -m pip install -e ".[public-test]"
+python -m pytest -q tests/unit/test_starter_primitives.py tests/public
+```
+
+The first command checks **published aggregate evidence** with no external
+dependencies. The tests run actual model primitives on synthetic fixtures;
+neither command retrains the reported models or certifies independent future
+performance. See [quickstart](docs/QUICKSTART.md),
+[architecture](docs/ARCHITECTURE.md), and
+[versioning](docs/VERSIONING.md).
 
 ## Predictive development results
 
@@ -58,7 +75,7 @@ The most complete report is [v3.8 model-risk and calibration analysis](evidence/
 
 This is a **privacy-preserving publication snapshot**, not the original immutable research directory. Vendor or paid inputs, raw market prices/labels, protected source-event version histories, model checkpoint binaries, internal compute ledgers, credentials and all Codex/LLM prompts are intentionally absent. Some original hardcoded usernames are replaced with **USERNAME** in public code copies. Hence **public source files are not byte-identical to frozen internal execution code** and the published aggregates cannot be reproduced without the separately authorized original datasets, artifacts, dependencies, and paths.
 
-The GitHub Actions workflow runs only dependency-free Python syntax and JSON checks; it does **not** run numerical research or download financial data.
+GitHub Actions checks Python syntax, JSON structure, selected synthetic-data model-primitive unit tests, published aggregate claim consistency, and a limited publication hygiene boundary. It does **not** rerun research training, download financial data, or independently validate scientific claims.
 
 ### Scientific qualification state
 
@@ -70,6 +87,10 @@ The GitHub Actions workflow runs only dependency-free Python syntax and JSON che
 | Independent research/governance reviewer and actual freeze | Not obtained |
 | Sealed final evaluation, real prospective forecasts and matured outcomes | **Not performed / 0** |
 | Live strategy, actual alpha, Sharpe, net economic improvement | **Not claimed** |
+
+### Package and research release versions
+
+The public research tag `v3.8.1-research` and Python package version `3.0.0.dev1` refer to **different version namespaces**: evidence/report publication versus the unchanged v3 implementation. Both Python version declarations agree. See [versioning](docs/VERSIONING.md).
 
 ### Repository license
 

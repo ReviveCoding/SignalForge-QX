@@ -10,7 +10,7 @@ With Python 3.11+ in the repository root, run:
 
     python -m compileall -q src scripts tests policy_v3 studies_v3 diagnostics_v3 p1_pit_readiness_v34 calibration_v34 qualification_v35 data_recovery_v36 evidence_procurement_v37 model_risk_v38
 
-GitHub Actions verifies only Python syntax and JSON file parsing. This check does **not** validate CUDA fitting, scientific point-in-time information quality, model accuracy, or historic experimental parity.
+GitHub Actions also executes selected source-level PIT/quantile/bootstrap tests on synthetic inputs, checks the published aggregate table and scans Git-tracked filenames for basic publication-hygiene violations. These checks do **not** validate CUDA fitting, scientific point-in-time source authenticity, full historic experimental parity or future market performance. See [public quickstart](QUICKSTART.md).
 
 ## Public aggregate research evidence
 
