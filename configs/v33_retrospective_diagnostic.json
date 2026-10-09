@@ -1,0 +1,73 @@
+{
+  "protocol_id": "sgqx-v3.3-retrospective-sia-diagnostic",
+  "scope": "RETROSPECTIVE_DEVELOPMENT_DIAGNOSTIC_ONLY",
+  "reserved_access": false,
+  "final_qualified": false,
+  "future_v32_unchanged": true,
+  "transform_version": "sgqx-v3.3-sia-log1p-day-constant-ood-v1",
+  "constant_tolerance": 1e-8,
+  "age_unit_days": 1,
+  "features": "explicit typed source/spec order",
+  "seeds": [
+    11,
+    37,
+    71
+  ],
+  "tracks": {
+    "Main-A": {
+      "years": [
+        2019,
+        2020
+      ],
+      "information": "I3"
+    },
+    "Nested-B": {
+      "years": [
+        2021,
+        2022
+      ],
+      "information": "I4"
+    }
+  },
+  "families": {
+    "mlp": {
+      "width": 16,
+      "lr": 0.001,
+      "epochs": 100
+    },
+    "lightgbm": {
+      "regularization": 1
+    },
+    "rgmf_gru": {
+      "width": 16,
+      "lr": 0.001,
+      "epochs": 100
+    }
+  },
+  "planned_fits": 36,
+  "numeric_gpu_ceiling": null,
+  "cost_authorization": null,
+  "separate_measured_pilot": null,
+  "old_ledgers_reuse": false,
+  "legacy_cost_heuristic_seconds": 386.5,
+  "aspirational_relative_pinball_gain": 0.01,
+  "aspirational_baselines": {
+    "Main-A": {
+      "family": "historical",
+      "value": 0.246973383
+    },
+    "Nested-B": {
+      "family": "linear_quantile",
+      "value": 0.215321149
+    }
+  },
+  "claims": "goals are speculative, no performance evidence",
+  "paired_metrics": [
+    "shared_normalized_pinball",
+    "absolute_pinball",
+    "p99_abs_quantile_forecast",
+    "abs_forecast_over_100",
+    "per_quantile_support",
+    "seed_stability"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "version": "v3.1-preregistered",
+  "outcome_blind": true,
+  "targets": {
+    "SPY": {
+      "cftc": [
+        "E-mini S&P 500"
+      ],
+      "eia": []
+    },
+    "QQQ": {
+      "cftc": [
+        "Nasdaq-100"
+      ],
+      "eia": []
+    },
+    "IEF": {
+      "cftc": [
+        "5-Year U.S. Treasury Note",
+        "10-Year U.S. Treasury Note"
+      ],
+      "eia": []
+    },
+    "TLT": {
+      "cftc": [
+        "10-Year U.S. Treasury Note",
+        "U.S. Treasury Bond",
+        "Ultra U.S. Treasury Bond"
+      ],
+      "eia": []
+    },
+    "GLD": {
+      "cftc": [
+        "Gold"
+      ],
+      "eia": []
+    },
+    "SLV": {
+      "cftc": [
+        "Silver"
+      ],
+      "eia": []
+    },
+    "USO": {
+      "cftc": [
+        "WTI Crude Oil"
+      ],
+      "eia": [
+        "commercial_crude_stocks",
+        "refinery_utilization",
+        "petroleum_supply"
+      ]
+    },
+    "UNG": {
+      "cftc": [
+        "Henry Hub Natural Gas"
+      ],
+      "eia": [
+        "natural_gas_source_only_if_separately_qualified"
+      ]
+    }
+  },
+  "rules": {
+    "cftc_semantics": "reported_positioning_contracts_not_cash_flow",
+    "multi_contract_treasury_features": [
+      "individual_normalized_position",
+      "curve_position_differential"
+    ],
+    "mapping_selection": "fixed_before_track_outcomes",
+    "unmatched_source": "missing_not_zero",
+    "eia_nonapplicable_assets": "masked_source_not_numeric_zero"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "HPO_or_ABC_or_v32_authorized": false,
+  "OOF": {
+    "baseline_preprocessing": "per-block past-only original market-only transformer/asset scale, native-unit predictions",
+    "folds": "original exact common-context training grid, same target-normalizer IDs",
+    "inner_past_mature_minimum": 26,
+    "inner_validation_dates": 13,
+    "minimum_past_mature_dates": 26,
+    "minimum_residual_dates": 26,
+    "prediction_block_dates": 13,
+    "residual_preprocessing": "typed SIA fitted on maturity-qualified prefix for inner fit, full mature training for final refit"
+  },
+  "architecture": {
+    "exact_native_fallback": true,
+    "gate": "sigmoid(source latent)/source_count with raw availability and any-context numeric OOD mask",
+    "non_crossing": "predeclared cumulative-max projection",
+    "normalized_residual_bound": 0.15,
+    "source_encoders": "GRU per market+source sequence",
+    "width": 16,
+    "zero_init_residual_heads": true
+  },
+  "baseline_rule": {
+    "Main-A": {
+      "family": "historical",
+      "regularization": 1.0
+    },
+    "Nested-B": {
+      "family": "linear_quantile",
+      "regularization": 0.1
+    }
+  },
+  "baseline_scope": "Fixed new rule before new BAR outcomes; alpha0.1 is not copied from future old fold tuning. Exact old strongest baseline remains immutable comparison control. Compare own fixed anchor too.",
+  "configuration_id": "9284c7d8951e6d857bdf4dc00c8ffcb2fa383884e07d1b78d06b8a63475588a9",
+  "decision_rule": {
+    "coverage_mean_absolute_error_max_deterioration_vs_strong": 0.02,
+    "crossings_and_abs_forecast_over100": 0,
+    "each_tail_coverage_error_max_deterioration_vs_strong": 0.05,
+    "minimum_relative_improvement": 0.01,
+    "normalized_pinball_lower_than_own_anchor_both_tracks": true,
+    "normalized_pinball_lower_than_strong_control_both_tracks": true,
+    "otherwise": "negative/inconclusive; stop expansion"
+  },
+  "external_study_hash": "1c9bf5c125c9825a0d06db1d2c6f555e2a998f7c752ac8a97e4081f3b9ecbdda",
+  "final_access": false,
+  "fits": [
+    {
+      "family": "bar_gru",
+      "fold_id": "20cd465aa6e731ba2b2e03dce88c5d75f0e09bf63979c53452cf741e0c46b82a",
+      "information": "I3",
+      "normalizer_id": "a1f1b53d0bf844833dd0b5fd444ff93f913097c7d3cd1a72c6b4d03e518cf722",
+      "seed": 11,
+      "settings": {
+        "bound": 0.15,
+        "lr": 0.001,
+        "max_inner_epochs": 100,
+        "width": 16
+      },
+      "sia_manifest_id": "594b0946b31524dbc6a689f07789629d4c7185504c75196e6c2742a56f78ef19",
+      "source_id": "a1f25a0ffe575db470588c33f94c37f58148884c8559980449f600913b590a70",
+      "track": "Main-A",
+      "year": 2020
+    },
+    {
+      "family": "bar_gru",
+      "fold_id": "20cd465aa6e731ba2b2e03dce88c5d75f0e09bf63979c53452cf741e0c46b82a",
+      "information": "I3",
+      "normalizer_id": "a1f1b53d0bf844833dd0b5fd444ff93f913097c7d3cd1a72c6b4d03e518cf722",
+      "seed": 37,
+      "settings": {
+        "bound": 0.15,
+        "lr": 0.001,
+        "max_inner_epochs": 100,
+        "width": 16
+      },
+      "sia_manifest_id": "594b0946b31524dbc6a689f07789629d4c7185504c75196e6c2742a56f78ef19",
+      "source_id": "a1f25a0ffe575db470588c33f94c37f58148884c8559980449f600913b590a70",
+      "track": "Main-A",
+      "year": 2020
+    },
+    {
+      "family": "bar_gru",
+      "fold_id": "20cd465aa6e731ba2b2e03dce88c5d75f0e09bf63979c53452cf741e0c46b82a",
+      "information": "I3",
+      "normalizer_id": "a1f1b53d0bf844833dd0b5fd444ff93f913097c7d3cd1a72c6b4d03e518cf722",
+      "seed": 71,
+      "settings": {
+        "bound": 0.15,
+        "lr": 0.001,
+        "max_inner_epochs": 100,
+        "width": 16
+      },
+      "sia_manifest_id": "594b0946b31524dbc6a689f07789629d4c7185504c75196e6c2742a56f78ef19",
+      "source_id": "a1f25a0ffe575db470588c33f94c37f58148884c8559980449f600913b590a70",
+      "track": "Main-A",
+      "year": 2020
+    },
+    {
+      "family": "bar_gru",
+      "fold_id": "000b8d624792b1c4fb9a690e63754d8947d1aa0fddc62615aebbc98fccc8ef45",
+      "information": "I4",
+      "normalizer_id": "bffa64ed44fb2b90339fc81caeafbcdf1d7bd822078e44249ca9b4210fb15d64",
+      "seed": 11,
+      "settings": {
+        "bound": 0.15,
+        "lr": 0.001,
+        "max_inner_epochs": 100,
+        "width": 16
+      },
+      "sia_manifest_id": "9abc9a4eebb4ab3c1eb8eecd36f84971f305d59563e9253f0395b33421bc66d1",
+      "source_id": "7e3c174202b59bbe87b48329dd6faf03adb39e24ccf3d4f0c513ca88fb420b1c",
+      "track": "Nested-B",
+      "year": 2022
+    },
+    {
+      "family": "bar_gru",
+      "fold_id": "000b8d624792b1c4fb9a690e63754d8947d1aa0fddc62615aebbc98fccc8ef45",
+      "information": "I4",
+      "normalizer_id": "bffa64ed44fb2b90339fc81caeafbcdf1d7bd822078e44249ca9b4210fb15d64",
+      "seed": 37,
+      "settings": {
+        "bound": 0.15,
+        "lr": 0.001,
+        "max_inner_epochs": 100,
+        "width": 16
+      },
+      "sia_manifest_id": "9abc9a4eebb4ab3c1eb8eecd36f84971f305d59563e9253f0395b33421bc66d1",
+      "source_id": "7e3c174202b59bbe87b48329dd6faf03adb39e24ccf3d4f0c513ca88fb420b1c",
+      "track": "Nested-B",
+      "year": 2022
+    },
+    {
+      "family": "bar_gru",
+      "fold_id": "000b8d624792b1c4fb9a690e63754d8947d1aa0fddc62615aebbc98fccc8ef45",
+      "information": "I4",
+      "normalizer_id": "bffa64ed44fb2b90339fc81caeafbcdf1d7bd822078e44249ca9b4210fb15d64",
+      "seed": 71,
+      "settings": {
+        "bound": 0.15,
+        "lr": 0.001,
+        "max_inner_epochs": 100,
+        "width": 16
+      },
+      "sia_manifest_id": "9abc9a4eebb4ab3c1eb8eecd36f84971f305d59563e9253f0395b33421bc66d1",
+      "source_id": "7e3c174202b59bbe87b48329dd6faf03adb39e24ccf3d4f0c513ca88fb420b1c",
+      "track": "Nested-B",
+      "year": 2022
+    }
+  ],
+  "folds": {
+    "Main-A:2020": {
+      "fold_id": "20cd465aa6e731ba2b2e03dce88c5d75f0e09bf63979c53452cf741e0c46b82a",
+      "information": "I3",
+      "minimum_training_dates": 156,
+      "normalizer_id": "a1f1b53d0bf844833dd0b5fd444ff93f913097c7d3cd1a72c6b4d03e518cf722",
+      "raw_context_hash": "43de4bca63cced3c6497314f1b2c6370d26069aa1bf008006df3e3feeb651d70",
+      "sia_manifest_id": "594b0946b31524dbc6a689f07789629d4c7185504c75196e6c2742a56f78ef19",
+      "source_id": "a1f25a0ffe575db470588c33f94c37f58148884c8559980449f600913b590a70",
+      "target_hash": "4f5ce6c44b0235a949a03ef0675aa8137ebe786cfdfc2e29c3938406b8865693",
+      "test_distinct_dates": 52,
+      "train_distinct_dates": 467
+    },
+    "Nested-B:2022": {
+      "fold_id": "000b8d624792b1c4fb9a690e63754d8947d1aa0fddc62615aebbc98fccc8ef45",
+      "information": "I4",
+      "minimum_training_dates": 52,
+      "normalizer_id": "bffa64ed44fb2b90339fc81caeafbcdf1d7bd822078e44249ca9b4210fb15d64",
+      "raw_context_hash": "c472e20cc01e3862d42f63bb514ed909708201e2a23ccfbf6f4764b42591cf70",
+      "sia_manifest_id": "9abc9a4eebb4ab3c1eb8eecd36f84971f305d59563e9253f0395b33421bc66d1",
+      "source_id": "7e3c174202b59bbe87b48329dd6faf03adb39e24ccf3d4f0c513ca88fb420b1c",
+      "target_hash": "3aa27a062a524312a4275eeb5b393bfab1a87a87e7e1d868592a78ffa65e25f1",
+      "test_distinct_dates": 52,
+      "train_distinct_dates": 92
+    }
+  },
+  "frozen_v2_hash": "471e70eec0fd912ae1ae652efb9f494f3cc28b371c4f5c0e4d2e7f21abb5e870",
+  "old_BAR_gate_not_reinterpreted": true,
+  "optimizer": {
+    "clip_gradient_norm": 1.0,
+    "epoch_selection": "minimum mature inner normalized pinball including zero-epoch anchor; earliest tie; final refit selected epoch count",
+    "lr": 0.001,
+    "max_inner_epochs": 100,
+    "name": "AdamW",
+    "seed_rule": [
+      11,
+      37,
+      71
+    ],
+    "weight_decay": 0.01
+  },
+  "policy_hash": "751b920945c1895ee8b6a4a824beb658412a3d19a2a92b56d9807a909c510bf5",
+  "policy_id": "sgqx-v33-local-budget-free-v3",
+  "policy_source_hash": "18bd931ad3af32bad08982eda0e02c8911c88175cd8b6bc8e8b51451147ef1b5",
+  "protocol_id": "sgqx-v33-BAR-post-result-exploratory-v1r1",
+  "reserved_access": false,
+  "scope": "POST_RESULT_EXPLORATORY_RETROSPECTIVE_ONLY",
+  "uncertainty": {
+    "claim": "descriptive moving-block bootstrap intervals only; no significance/confirmatory claims",
+    "date_blocks": [
+      4,
+      8,
+      13
+    ],
+    "draws": 2000,
+    "seed": 20261008
+  }
+}

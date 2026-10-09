@@ -1,0 +1,307 @@
+{
+  "phases": [
+    {
+      "id": "P00",
+      "name": "Environment and resource qualification",
+      "depends_on": [],
+      "required_artifacts": [
+        "environment.json",
+        "compatibility.json",
+        "resource_budget.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "P01",
+      "name": "Desktop study independent of GPU qualification",
+      "depends_on": [],
+      "required_artifacts": [
+        "literature_matrix.json",
+        "mechanism_cards.json",
+        "source_access_matrix.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "P02",
+      "name": "Acquisition",
+      "depends_on": [
+        "P01"
+      ],
+      "required_artifacts": [
+        "raw_manifest.json",
+        "download_ledger.json",
+        "pilot_schema_report.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "P03",
+      "name": "Raw EDA and quality",
+      "depends_on": [
+        "P02"
+      ],
+      "required_artifacts": [
+        "raw_eda.json",
+        "anomaly_log.json",
+        "coverage_report.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "P04",
+      "name": "Canonical/PIT reconstruction",
+      "depends_on": [
+        "P03"
+      ],
+      "required_artifacts": [
+        "event_manifest.json",
+        "entity_map.json",
+        "pit_certification.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "P05",
+      "name": "Targets universe splits",
+      "depends_on": [
+        "P04"
+      ],
+      "required_artifacts": [
+        "target_manifest.json",
+        "split_manifest.json",
+        "contamination_register.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "P06",
+      "name": "Train-only preprocessing/features",
+      "depends_on": [
+        "P05"
+      ],
+      "required_artifacts": [
+        "transform_manifest.json",
+        "feature_lineage.json",
+        "preprocessing_report.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "P07",
+      "name": "Baseline vertical slice",
+      "depends_on": [
+        "P06",
+        "P00"
+      ],
+      "required_artifacts": [
+        "baseline_predictions.parquet",
+        "baseline_metrics.json",
+        "baseline_receipt.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN",
+      "scope": "per_track; requires real data and CUDA objectives"
+    },
+    {
+      "id": "P08",
+      "name": "Proposed methods/HPO",
+      "depends_on": [
+        "P07"
+      ],
+      "required_artifacts": [
+        "hpo_ledger.json",
+        "model_registry.json",
+        "development_predictions.parquet"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "P09",
+      "name": "Controlled experiments",
+      "depends_on": [
+        "P08"
+      ],
+      "required_artifacts": [
+        "experiment_registry.json",
+        "ablation_report.json",
+        "robustness_report.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "P10",
+      "name": "Prediction postprocessing plus independent economics qualification",
+      "depends_on": [
+        "P09"
+      ],
+      "required_artifacts": [
+        "calibrator_manifest.json",
+        "ensemble_manifest.json",
+        "predictive_freeze_candidate.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN",
+      "optional_branch_artifacts": [
+        "controller_qualification.json"
+      ]
+    },
+    {
+      "id": "P11",
+      "name": "Single-GPU systems qualification",
+      "depends_on": [
+        "P07"
+      ],
+      "required_artifacts": [
+        "gpu_qualification.json",
+        "systems_benchmarks.json",
+        "restart_qualification.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN",
+      "scope": "development-only profile; may overlap CPU work, never another heavy GPU"
+    },
+    {
+      "id": "P12",
+      "name": "Scientific freeze and final inference",
+      "depends_on": [
+        "P10",
+        "P11"
+      ],
+      "required_artifacts": [
+        "freeze_receipt.json",
+        "final_access_ledger.json",
+        "frozen_predictions.parquet"
+      ],
+      "state": "PLANNED",
+      "final_data_access": true,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN"
+    },
+    {
+      "id": "P13",
+      "name": "Final statistics and economics",
+      "depends_on": [
+        "P12"
+      ],
+      "required_artifacts": [
+        "paired_comparisons.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": true,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN",
+      "optional_branch_artifacts": [
+        "final_cost_grid.json",
+        "accounting_reconciliation.json"
+      ]
+    },
+    {
+      "id": "P14",
+      "name": "Report and reproducibility",
+      "depends_on": [],
+      "required_artifacts": [
+        "technical_report.md",
+        "technical_report.html",
+        "evidence_index.json",
+        "future_research_cards.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": false,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN",
+      "scope": "incremental reports for any available artifacts; complete report asserts prerequisite receipts"
+    },
+    {
+      "id": "P15",
+      "name": "Prospective operation",
+      "depends_on": [
+        "P10",
+        "P11"
+      ],
+      "required_artifacts": [
+        "forward_predictions.parquet",
+        "forward_incidents.json",
+        "prospective_cohort.json"
+      ],
+      "state": "PLANNED",
+      "final_data_access": false,
+      "prospective_only": true,
+      "implementation_required": true,
+      "execution_status": "NOT_RUN",
+      "scope": "own operational freeze receipt, actual forward time; independent of retrospective economics"
+    }
+  ],
+  "branch_gates": {
+    "predictive_final": [
+      "qualified_track_data",
+      "P10_predictive",
+      "P11",
+      "frozen_receipt",
+      "explicit_final_authorization"
+    ],
+    "economic_final": [
+      "predictive_final",
+      "price_P1",
+      "controller_qualification",
+      "accounting_oracle"
+    ],
+    "forward": [
+      "operational_freeze",
+      "actual_decision_time",
+      "new_data_snapshot",
+      "qualified_backend"
+    ],
+    "development_report": [
+      "at_least_one_committed_artifact_or_explicit_blocker"
+    ]
+  }
+}

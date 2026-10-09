@@ -1,0 +1,76 @@
+{
+  "BAR_training": false,
+  "HPO": false,
+  "OOF": {
+    "block_dates": 13,
+    "expanding": true,
+    "inner_validation_dates": 13,
+    "minimum_inner_fit_distinct_dates": 26,
+    "minimum_past_distinct_dates": 26
+  },
+  "budget_free": true,
+  "calibration": {
+    "candidates": [
+      "identity",
+      "intercept",
+      "cqr"
+    ],
+    "ensembling": false,
+    "expected_smaller_tail_date_floor": 20,
+    "minimum_quantile_dates": [
+      52,
+      39,
+      20,
+      39,
+      52
+    ],
+    "refit": "per-seed mature OOF before outer cutoff",
+    "selection": "track-wide seed-average chronological inner normalized pinball; earliest identity tie",
+    "unsupported": "exact identity fixed anchors"
+  },
+  "code_hash": "241ce51a591d6aec21eae61873b8e795801c94baa7e029a1ea9c47022c4cb9c7",
+  "configuration_id": "0972b8982d8ca199d93b03dd887216a879aa82b233bb7b63f0fadb94cc994231",
+  "final_access": false,
+  "frozen_v2_source_hash": "471e70eec0fd912ae1ae652efb9f494f3cc28b371c4f5c0e4d2e7f21abb5e870",
+  "model": {
+    "clip_gradient_norm": 1.0,
+    "elapsed": "zeros faithful frozen v2 adapter",
+    "epochs": 100,
+    "kind": "rgmf_gru",
+    "lr": 0.001,
+    "observed": "SIA raw observed + true indicator masks",
+    "optimizer": "AdamW default weight_decay .01",
+    "source_mask": "explicit raw latest source values",
+    "width": 16
+  },
+  "policy_hash": "18bd931ad3af32bad08982eda0e02c8911c88175cd8b6bc8e8b51451147ef1b5",
+  "protocol_id": "sgqx-v34-SIA-genuine-mature-OOF-calibration-v1",
+  "reserved_access": false,
+  "scope": "POST_RESULT_EXPLORATORY_USED_OUTER_YEARS; NOT INDEPENDENT CONFIRMATION",
+  "seeds": [
+    11,
+    37,
+    71
+  ],
+  "subjects": [
+    [
+      "Main-A",
+      2020,
+      "I3"
+    ],
+    [
+      "Nested-B",
+      2022,
+      "I4"
+    ]
+  ],
+  "uncertainty": {
+    "blocks": [
+      4,
+      8,
+      13
+    ],
+    "draws": 2000,
+    "seed": 20261008
+  }
+}

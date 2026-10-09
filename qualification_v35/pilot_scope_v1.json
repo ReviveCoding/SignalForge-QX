@@ -1,0 +1,50 @@
+{
+  "study_id": "sgqx-qualification-v35-v1",
+  "created_at": "2026-10-08T20:10:50.765634+00:00",
+  "scope": {
+    "issuer_assets": [
+      "IEF",
+      "TLT"
+    ],
+    "issuer_year": 2023,
+    "EIA_release_dates": [
+      "2023-08-30",
+      "2023-12-28"
+    ],
+    "full_requirement_assets": [
+      "SPY",
+      "QQQ",
+      "IEF",
+      "TLT",
+      "GLD",
+      "SLV",
+      "USO",
+      "UNG"
+    ],
+    "full_requirement_years": [
+      2010,
+      2023
+    ]
+  },
+  "selection_basis": "public documentary availability and unresolved evidence gaps; no model outcomes used",
+  "maximum_requests": 5,
+  "maximum_response_bytes": 8388608,
+  "request_timeout_seconds": 25,
+  "request_retries": 0,
+  "allowed_urls": [
+    "https://www.ishares.com/us/literature/tax-information/2023-ishares-distribution-summary-stamped.pdf",
+    "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_08_30/pdf/table4.pdf",
+    "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_12_28/pdf/appendix_e.pdf",
+    "https://www.sec.gov/info/edgar/specifications/pds-dissemination-spec022315.pdf",
+    "https://fred.stlouisfed.org/docs/api/fred/series_observations.html"
+  ],
+  "no_model_training": true,
+  "no_2024_or_later_market_data": true,
+  "reserved_access": false,
+  "final_access": false,
+  "new_actual_forecasts_allowed": false,
+  "candidate": "frozen SIA v2 historical research candidate only; BAR/calibration v34 not promoted",
+  "trusted_publisher_keys": {},
+  "trusted_reviewer_keys": {},
+  "plan_id": "8e0b89a3f04b315862241685d74a8108d4c8015b3bd69a41071de69af1d1b23f"
+}

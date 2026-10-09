@@ -1,0 +1,22 @@
+{
+  "status": "candidate_not_validated_on_user_hardware",
+  "python": "3.11",
+  "torch": "2.7.1",
+  "torch_cuda_index": "https://download.pytorch.org/whl/cu126",
+  "cuda_toolkit": "12.6",
+  "cuda_channel": "nvidia/label/cuda-12.6.3",
+  "lightgbm": "4.6.0",
+  "xgboost": "3.0.5",
+  "host_compiler": "gxx_linux-64=13",
+  "cuda_arch": "89",
+  "build_jobs": 2,
+  "no_cpu_fallback": true,
+  "after_qualification": [
+    "pip-freeze.txt",
+    "conda-explicit.txt",
+    "gpu_smoke.json",
+    "stack_candidate_sha256"
+  ],
+  "upgrade_policy": "no implicit upgrades on resume; changed resolved stack new environment receipt",
+  "reason": "bounded known-release candidate, not a claim of current latest; actual installer and objective probes must pass"
+}

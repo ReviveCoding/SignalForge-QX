@@ -1,0 +1,181 @@
+{
+  "experiments": [
+    {
+      "id": "E01",
+      "name": "Information value",
+      "contrast": "same model, matched dates, only information set changes",
+      "phase": "P09",
+      "invariants": [
+        "same_information_rows",
+        "pit_tier_separation"
+      ],
+      "status": "PLANNED",
+      "development_only": false,
+      "conditional": false,
+      "physical_gpus": 1,
+      "required_implementation": true,
+      "final_execution": "only_contrasts_listed_in_frozen_receipt"
+    },
+    {
+      "id": "E02",
+      "name": "Architecture",
+      "contrast": "same sources/context/target; model family changes",
+      "phase": "P09",
+      "invariants": [
+        "parameter_and_compute_report",
+        "strong_baseline"
+      ],
+      "status": "PLANNED",
+      "development_only": false,
+      "conditional": false,
+      "physical_gpus": 1,
+      "required_implementation": true,
+      "final_execution": "only_contrasts_listed_in_frozen_receipt"
+    },
+    {
+      "id": "E03",
+      "name": "Ablation",
+      "contrast": "remove component; distinguish retrained from frozen masking",
+      "phase": "P09",
+      "invariants": [
+        "component_retraining_flag",
+        "same_information_rows"
+      ],
+      "status": "PLANNED",
+      "development_only": false,
+      "conditional": false,
+      "physical_gpus": 1,
+      "required_implementation": true,
+      "final_execution": "only_contrasts_listed_in_frozen_receipt"
+    },
+    {
+      "id": "E04",
+      "name": "Invalid leakage controls",
+      "contrast": "wrong release/latest revision/target sentinel; dev only",
+      "phase": "P09",
+      "invariants": [
+        "invalid_control_label",
+        "never_promote"
+      ],
+      "status": "PLANNED",
+      "development_only": true,
+      "conditional": false,
+      "physical_gpus": 1,
+      "required_implementation": true,
+      "final_execution": "never_tune_or_benchmark_on_final"
+    },
+    {
+      "id": "E05",
+      "name": "Outage robustness",
+      "contrast": "source-release block changes using dependency closure",
+      "phase": "P09",
+      "invariants": [
+        "frozen_corruption_seeds",
+        "time_block_stress"
+      ],
+      "status": "PLANNED",
+      "development_only": false,
+      "conditional": false,
+      "physical_gpus": 1,
+      "required_implementation": true,
+      "final_execution": "only_contrasts_listed_in_frozen_receipt"
+    },
+    {
+      "id": "E06",
+      "name": "Temporal and asset transport",
+      "contrast": "held period/group, zero-shot vs refit split",
+      "phase": "P09",
+      "invariants": [
+        "no_future_regime_labels",
+        "transport_definition"
+      ],
+      "status": "PLANNED",
+      "development_only": false,
+      "conditional": false,
+      "physical_gpus": 1,
+      "required_implementation": true,
+      "final_execution": "only_contrasts_listed_in_frozen_receipt"
+    },
+    {
+      "id": "E07",
+      "name": "Scale x weighting",
+      "contrast": "3 scales x 3 rules x 3 seeds x 2 folds",
+      "phase": "P09",
+      "invariants": [
+        "capacity_gate",
+        "fixed_exposure_and_fixed_compute_tables"
+      ],
+      "status": "PLANNED",
+      "development_only": true,
+      "conditional": true,
+      "physical_gpus": 1,
+      "required_implementation": true,
+      "final_execution": "never_tune_or_benchmark_on_final"
+    },
+    {
+      "id": "E08",
+      "name": "SSL",
+      "contrast": "train-cutoff-only pretraining versus same downstream",
+      "phase": "P09",
+      "invariants": [
+        "pretrain_data_hash",
+        "capacity_gate"
+      ],
+      "status": "PLANNED",
+      "development_only": true,
+      "conditional": true,
+      "physical_gpus": 1,
+      "required_implementation": true,
+      "final_execution": "never_tune_or_benchmark_on_final"
+    },
+    {
+      "id": "E09",
+      "name": "Decision economics",
+      "contrast": "same forecasts/controller and 1/5/10/25 bps scenarios",
+      "phase": "P13",
+      "invariants": [
+        "price_P1_gate",
+        "self_financing_ledger"
+      ],
+      "status": "PLANNED",
+      "development_only": false,
+      "conditional": true,
+      "physical_gpus": 1,
+      "required_implementation": true,
+      "final_execution": "only_contrasts_listed_in_frozen_receipt"
+    },
+    {
+      "id": "E10",
+      "name": "Single-GPU systems",
+      "contrast": "precision compile batches copies caching recovery",
+      "phase": "P11",
+      "invariants": [
+        "one_GPU_lease",
+        "correctness_before_speed"
+      ],
+      "status": "PLANNED",
+      "development_only": true,
+      "conditional": false,
+      "physical_gpus": 1,
+      "required_implementation": true,
+      "final_execution": "never_tune_or_benchmark_on_final"
+    }
+  ],
+  "systems_substudies": [
+    "FP32_CUDA_reference",
+    "BF16",
+    "eager_compile_cold_warm",
+    "batch_accumulation",
+    "dataloader_copy",
+    "CPU_overlap",
+    "cache",
+    "interrupt_resume",
+    "numeric_inference_batches",
+    "statistics_CPU_GPU_parity",
+    "shared_GPU_lease_across_frameworks",
+    "optional_vectorized_seed_vs_serial_parity",
+    "NTFS_repo_ext4_runtime_IO_audit"
+  ],
+  "scale_run_count": 54,
+  "protocol_matrix": "configs/comparisons.json"
+}

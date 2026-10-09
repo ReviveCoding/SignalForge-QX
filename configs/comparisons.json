@@ -1,0 +1,70 @@
+{
+  "status": "planned_not_results",
+  "primary_model_contrast": "B3-age-aware-LightGBM-minus-RGMF",
+  "shared_keys": [
+    "track",
+    "price_mode",
+    "tier",
+    "decision_asset_grid",
+    "horizon",
+    "normalizer_id"
+  ],
+  "confirmatory_families": [
+    {
+      "id": "H1a",
+      "track": "Main-A",
+      "comparison": "I2_vs_I1_same_LGB"
+    },
+    {
+      "id": "H1b",
+      "track": "Main-A",
+      "comparison": "I3_vs_I2_same_LGB"
+    },
+    {
+      "id": "H1c",
+      "track": "Nested-B",
+      "comparison": "I4_vs_I3_same_LGB"
+    },
+    {
+      "id": "H2",
+      "track": "Main-A",
+      "comparison": "frozen_RGMF_vs_all_info_LGB"
+    },
+    {
+      "id": "H3",
+      "track": "Main-A",
+      "comparison": "loss_degradation_difference_under_frozen_outage_schedule"
+    }
+  ],
+  "multiple_testing": "Holm_within_this_explicit_family_missing_contrasts_report_not_deleted",
+  "diagnostics": [
+    "raw_vs_calibrated",
+    "common_dates_vs_total_coverage",
+    "reference_age_slices",
+    "cohort_composition",
+    "source_exclusion",
+    "fallback_count"
+  ],
+  "normalization": {
+    "risk_scale": "one shared train-only scale per asset comparison",
+    "date_mean": "equal eligible assets per date then equal dates",
+    "asset_loss_zero_scale": "epsilon fixed before final"
+  },
+  "variance": "calendar blocks shared across models and all assets; seeds separate training variability",
+  "E03_required": [
+    "no_age_retrained",
+    "no_coverage_retrained",
+    "fixed_gate_retrained",
+    "concat_capacity_matched",
+    "linear_gate",
+    "base_frozen_vs_joint",
+    "raw_vs_calibrated",
+    "source_outage_frozen"
+  ],
+  "plan_policy": {
+    "deduplicate_fits": true,
+    "pilot_then_observed_cost_plan": true,
+    "run_budget_extension": "explicit only",
+    "source_gate_failure": "complete software branch but BLOCKED_DATA evidence"
+  }
+}

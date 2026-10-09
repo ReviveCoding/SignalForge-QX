@@ -1,0 +1,21 @@
+{
+  "policy_id": "sgqx-v33-local-budget-free-v3",
+  "scope": "future explicitly requested local isolated development only",
+  "gpu_seconds_ceiling": null,
+  "pilot_seconds_ceiling": null,
+  "manual_cost_approval_required": false,
+  "measured_bill_required": false,
+  "per_fit_timeout_seconds": null,
+  "observation_meter_only": true,
+  "max_explicit_retries": 2,
+  "vram_headroom_bytes": 1073741824,
+  "desktop_utilization_threshold": null,
+  "exclusive_gpu_lease_required": true,
+  "no_competing_cuda_compute": true,
+  "source_plan_cuda_input_binding_required": true,
+  "label_maturity_required": true,
+  "reserved_access": false,
+  "final_access": false,
+  "auto_start_training": false,
+  "existing_v2_protocol_and_ledgers_unchanged": true
+}

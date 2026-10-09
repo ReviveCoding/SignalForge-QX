@@ -1,0 +1,50 @@
+{
+  "schema": "cftc_asset_mapping_v31",
+  "registered_at": "2026-10-03T15:31:00Z",
+  "selection": "outcome_blind_domain_proxy",
+  "positioning_is_cash_flow": false,
+  "pit_tier": "B",
+  "release_policy": {
+    "ordinary": "report_date_plus_7_calendar_days_23_59_59_America_New_York",
+    "ordinary_rationale": "conservative upper bound beyond the usual Friday 15:30 ET publication and typical one-to-two-day holiday delay; not actual historical release evidence",
+    "blackout_report_dates": {
+      "start": "2018-12-24",
+      "end": "2019-03-12",
+      "reason": "2018-2019 federal shutdown backlog; historical archive bytes cannot establish original public availability"
+    },
+    "known_2023_ion_releases": {
+      "2023-01-31": "2023-02-24T15:30:00-05:00",
+      "2023-02-07": "2023-03-03T15:30:00-05:00",
+      "2023-02-14": "2023-03-08T15:30:00-05:00",
+      "2023-02-21": "2023-03-10T15:30:00-05:00",
+      "2023-02-28": "2023-03-14T15:30:00-04:00",
+      "2023-03-07": "2023-03-16T15:30:00-04:00",
+      "2023-03-14": "2023-03-21T15:30:00-04:00"
+    },
+    "known_correction_upper_bounds": {
+      "2019-03-26": "2019-04-04T00:00:00-04:00"
+    },
+    "source_urls": [
+      "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm",
+      "https://www.cftc.gov/MarketReports/CommitmentsofTraders/ReleaseSchedule/index.htm",
+      "https://www.cftc.gov/MarketReports/CommitmentsofTraders/HistoricalSpecialAnnouncements/index.htm",
+      "https://www.cftc.gov/PressRoom/PressReleases/7864-19",
+      "https://www.cftc.gov/PressRoom/PressReleases/8662-23"
+    ]
+  },
+  "assets": {
+    "SPY": {"family": "tff", "contract_code": "13874A", "expected_market_names": ["E-MINI S&P 500 STOCK INDEX - CHICAGO MERCANTILE EXCHANGE", "E-MINI S&P 500 - CHICAGO MERCANTILE EXCHANGE"]},
+    "QQQ": {"family": "tff", "contract_code": "209742", "expected_market_names": ["NASDAQ-100 STOCK INDEX (MINI) - CHICAGO MERCANTILE EXCHANGE", "NASDAQ MINI - CHICAGO MERCANTILE EXCHANGE"]},
+    "IEF": {"family": "tff", "contract_code": "044601", "expected_market_names": ["5-YEAR U.S. TREASURY NOTES - CHICAGO BOARD OF TRADE", "UST 5Y NOTE - CHICAGO BOARD OF TRADE"]},
+    "TLT": {"family": "tff", "contract_code": "020601", "expected_market_names": ["U.S. TREASURY BONDS - CHICAGO BOARD OF TRADE", "UST BOND - CHICAGO BOARD OF TRADE"]},
+    "GLD": {"family": "disaggregated", "contract_code": "088691", "expected_market_names": ["GOLD - COMMODITY EXCHANGE INC."]},
+    "SLV": {"family": "disaggregated", "contract_code": "084691", "expected_market_names": ["SILVER - COMMODITY EXCHANGE INC."]},
+    "USO": {"family": "disaggregated", "contract_code": "067651", "expected_market_names": ["CRUDE OIL, LIGHT SWEET - NEW YORK MERCANTILE EXCHANGE", "WTI-PHYSICAL - NEW YORK MERCANTILE EXCHANGE"]},
+    "UNG": {"family": "disaggregated", "contract_code": "023651", "expected_market_names": ["NATURAL GAS - NEW YORK MERCANTILE EXCHANGE", "NAT GAS NYME - NEW YORK MERCANTILE EXCHANGE"]}
+  },
+  "feature_fields": {
+    "tff": ["Dealer_net_fraction_open_interest", "Asset_Mgr_net_fraction_open_interest", "Lev_Money_net_fraction_open_interest", "Other_Rept_net_fraction_open_interest"],
+    "disaggregated": ["Prod_Merc_net_fraction_open_interest", "Swap_net_fraction_open_interest", "M_Money_net_fraction_open_interest", "Other_Rept_net_fraction_open_interest"]
+  },
+  "claim_boundary": "CFTC contract positioning proxies for related asset exposures, not ETF holdings, not cash flow, not causal investor demand. Historical archive bytes are current retrievable versions, so reconstructed timing remains Tier B."
+}

@@ -1,0 +1,128 @@
+{
+  "profile_id": "local_4090",
+  "version": "3.0",
+  "status": "proposed_requires_host_qualification",
+  "host": {
+    "preferred_os": "WSL2 Linux",
+    "distribution_hint": "Ubuntu autodetected, must be WSL2",
+    "device_name_contains": "RTX 4090 Laptop",
+    "expected_physical_gpu_count": 1,
+    "nominal_vram_gb": 16,
+    "cpu_ram_disk": "probe_do_not_assume",
+    "modify_driver_or_wsl_settings": false,
+    "host_shell": "PowerShell 7 native Windows",
+    "codex_location": "Windows native",
+    "compute_location": "WSL2 Linux"
+  },
+  "paths": {
+    "repo": "C:\\Users\\USERNAME\\Downloads\\SignalForge-QX",
+    "runtime": "$HOME/.local/share/signalforge-qx-v3/<repo-path-hash>",
+    "runtime_filesystem": "WSL_ext4",
+    "external_runtime_requires_workspace_permission": true,
+    "host_volume_free_space_check": true,
+    "linux_repo": "/mnt/c/Users/USERNAME/Downloads/SignalForge-QX",
+    "canonical_code": "Windows repo only",
+    "ledger_filesystem": "WSL ext4 only",
+    "editable_linux_clone": false
+  },
+  "cuda": {
+    "device": "cuda:0",
+    "visible_devices": "0",
+    "max_heavy_jobs": 1,
+    "cross_framework_exclusive_lease": true,
+    "lease_scope": "user_gpu_device_not_only_this_repo",
+    "free_memory_probe_required": true,
+    "workload_vram_ceiling_gib": 12,
+    "total_memory_reserve_gib": 2,
+    "free_memory_reserve_gib": 1,
+    "neural_cpu_fallback": false,
+    "opencl_fallback": false,
+    "multiprocessing_start_method": "spawn",
+    "pytorch_precision": "bf16_autocast_fp32_parameters_after_qualification",
+    "critical_loss_reduction": "float32",
+    "compile_default": false,
+    "compile_enable_after_correctness_and_cold_cost_benchmark": true,
+    "distributed_enabled": false,
+    "physical_multi_gpu_claims": false,
+    "gpu_model_concurrency": 1,
+    "vectorized_seed_experiment": "optional_after_independent_rng_and_optimizer_equivalence",
+    "device_selection": "verified UUID and cuda:0 mapping"
+  },
+  "cpu": {
+    "max_threads_total": 8,
+    "max_memory_heavy_jobs": 1,
+    "max_small_parallel_jobs": 2,
+    "default_dataloader_workers": 2,
+    "dataloader_worker_candidates": [
+      0,
+      2,
+      4
+    ],
+    "numeric_reference_dtype": "float64",
+    "intentional_cpu_workloads": [
+      "duckdb_sql",
+      "raw_parse",
+      "ridge",
+      "linear_quantile",
+      "accounting",
+      "small_statistics",
+      "schema_validation"
+    ]
+  },
+  "memory": {
+    "max_working_ram_gib": 8,
+    "fraction_current_available_ram": 0.6,
+    "swap_as_primary_capacity": false,
+    "admission_control": true
+  },
+  "io": {
+    "max_network_workers": 2,
+    "max_large_archive_jobs": 1,
+    "max_sec_requests_per_second": 1,
+    "respect_provider_stricter_limit": true,
+    "pilot_max_download_gib": 2,
+    "max_single_download_gib": 1,
+    "host_min_free_gib": 20,
+    "runtime_min_free_gib": 10,
+    "full_download_requires_host_disk_evidence": true,
+    "allow_unbounded_archive_extraction": false,
+    "bootstrap_host_min_free_gib": 30,
+    "bootstrap_runtime_min_free_gib": 15
+  },
+  "recovery": {
+    "checkpoint_seconds": 120,
+    "checkpoint_at": "optimizer_step_boundary",
+    "heartbeat_seconds": 15,
+    "initial_cuda_segment_max_seconds": 300,
+    "max_retryable_attempts": 2,
+    "oom_microbatch_ladder": [
+      64,
+      32,
+      16,
+      8
+    ],
+    "oom_semantics_must_be_verified": true,
+    "auto_restart_after_unexplained_host_shutdown": false,
+    "stop_after_repeated_hardware_shutdown": true,
+    "atomic_artifacts": true,
+    "fsync": true,
+    "reconcile_before_resume": true,
+    "kill_unrelated_processes": false
+  },
+  "authorization": {
+    "paid_purchase": false,
+    "cloud_provisioning": false,
+    "broker_orders": false,
+    "final_read_default": false,
+    "auto_os_install": false
+  },
+  "budget": {
+    "limits_are_proposed_not_measured": true,
+    "pilot_gpu_seconds": 3600,
+    "development_gpu_seconds": 43200,
+    "pilot_completed_fit_ceiling": 120,
+    "full_plan_requires_pilot_cost_measurements": true,
+    "no_automatic_budget_increase": true,
+    "all_experiment_runs_must_be_planned": true
+  }
+}

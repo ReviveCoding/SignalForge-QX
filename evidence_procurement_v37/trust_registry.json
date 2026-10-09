@@ -1,0 +1,9 @@
+{
+  "schema": "v37-trust-1",
+  "environment": "REAL",
+  "independently_enrolled": false,
+  "custodians": {},
+  "publishers": {},
+  "reviewers": {},
+  "synthetic_keys_allowed": false
+}

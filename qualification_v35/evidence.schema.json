@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "V35 externally authenticated event-version evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "claim_id",
+    "clock_basis",
+    "correction_chain",
+    "correction_history_complete",
+    "dissemination_record",
+    "entity",
+    "field",
+    "first_public_at",
+    "known_at",
+    "parser_sha256",
+    "payload_sha256",
+    "publisher",
+    "retrieved_at",
+    "reviewer_record",
+    "schema_version",
+    "scope",
+    "scope_complete",
+    "source",
+    "test_not_evidence",
+    "url",
+    "valid_at",
+    "version_id",
+    "version_kind"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string"
+    },
+    "clock_basis": {
+      "type": "string"
+    },
+    "correction_chain": {
+      "type": "array"
+    },
+    "correction_history_complete": {
+      "type": "boolean"
+    },
+    "dissemination_record": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "entity": {
+      "type": "string"
+    },
+    "field": {
+      "type": "string"
+    },
+    "first_public_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "known_at": {
+      "type": "string"
+    },
+    "parser_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "payload_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "reviewer_record": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "schema_version": {
+      "const": "v35-evidence-1"
+    },
+    "scope": {
+      "type": "array"
+    },
+    "scope_complete": {
+      "type": "boolean"
+    },
+    "source": {
+      "type": "string"
+    },
+    "test_not_evidence": {
+      "type": "boolean"
+    },
+    "url": {
+      "type": "string"
+    },
+    "valid_at": {
+      "type": "string"
+    },
+    "version_id": {
+      "type": "string"
+    },
+    "version_kind": {
+      "type": "string"
+    }
+  }
+}

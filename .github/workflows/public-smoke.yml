@@ -1,0 +1,33 @@
+name: Offline publication checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  syntax-and-config:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile Python source without research data
+        run: |
+          python -m compileall -q src scripts tests policy_v3 studies_v3 diagnostics_v3 p1_pit_readiness_v34 calibration_v34 qualification_v35 data_recovery_v36 evidence_procurement_v37 model_risk_v38
+      - name: Check committed JSON files
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          paths = sorted(Path(".").rglob("*.json"))
+          for path in paths:
+              if any(part.startswith(".") for part in path.parts):
+                  continue
+              with path.open(encoding="utf-8") as handle:
+                  json.load(handle)
+          print(f"Validated {len(paths)} JSON files")
+          PY

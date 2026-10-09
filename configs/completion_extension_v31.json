@@ -1,0 +1,78 @@
+{
+  "protocol_id": "sgqx-v3.1-track-gpu",
+  "parent_study": "sgqx-v3",
+  "registered_at": "2026-10-03T15:31:00Z",
+  "registration_basis": "blocked Main/Nested data paths and already-observed Auxiliary diagnostics; successor claims remain separate",
+  "parent_evidence_immutable": true,
+  "parent_budget": {
+    "pilot_completed_fit_ceiling": 120,
+    "development_gpu_seconds": 43200,
+    "reset_permitted": false
+  },
+  "decision_contract": {
+    "origin": "Friday 18:00 America/New_York",
+    "tiingo_reconstructed_eod_available_local_time": "20:30:00",
+    "same_friday_final_eod_available": false,
+    "clock_tier": "B",
+    "original_publication_qualified": false
+  },
+  "information_sets": {
+    "Main-A": {
+      "I0": ["market"],
+      "I1": ["market", "macro"],
+      "I2": ["market", "macro", "cftc_positioning"],
+      "I3": ["market", "macro", "cftc_positioning", "relevant_eia_activity"]
+    },
+    "Nested-B": {
+      "I0": ["market"],
+      "I1": ["market", "macro"],
+      "I2": ["market", "macro", "cftc_positioning"],
+      "I3": ["market", "macro", "cftc_positioning", "relevant_eia_activity"],
+      "I4": ["market", "macro", "cftc_positioning", "relevant_eia_activity", "nport_reported_flows_holdings"]
+    }
+  },
+  "cpu_first": {
+    "required_before_gpu_activation": true,
+    "families": ["historical", "ewma", "ridge", "linear_quantile", "mixed_frequency_shrinkage"],
+    "purpose": "validate real panel, information increments, clocks, and target support before successor GPU cost"
+  },
+  "successor_gpu": {
+    "physical_gpus": 1,
+    "device": "RTX 4090 Laptop GPU",
+    "seeds": [11, 37, 71],
+    "pilot_fit_ceiling": 60,
+    "pilot_gpu_seconds": 3600,
+    "full_gpu_seconds": 21600,
+    "families": ["lightgbm", "xgboost", "mlp", "gru", "rgmf_linear", "rgmf_gru"],
+    "conditional_families": ["transformer", "rgmf_transformer"],
+    "conditional_gate": {
+      "minimum_independent_mature_decision_dates": 600,
+      "minimum_assets_with_target_coverage": 4,
+      "outcome_blind": true
+    },
+    "parent_ledger_reuse": false
+  },
+  "calibration": {
+    "track_specific_receipts": true,
+    "auxiliary_block_does_not_block_main_nested_development": true,
+    "minimum_support_source": "configs/statistical_contract.json",
+    "unsupported_quantile_action": "identity",
+    "pooled_asset_rows_as_independent_dates": false
+  },
+  "p1": {
+    "conditional": true,
+    "requires_raw_open": true,
+    "requires_complete_action_coverage": true,
+    "requires_ex_date": true,
+    "requires_payment_date": true,
+    "requires_split_events": true,
+    "requires_cash_benchmark": true,
+    "p0_substitution_permitted": false
+  },
+  "final": {
+    "reserved_access_before_freeze": false,
+    "strict_pit_required_for_strict_final": true,
+    "freeze_receipt_required": true,
+    "prospective_is_separate_from_reserved_retrospective": true
+  }
+}

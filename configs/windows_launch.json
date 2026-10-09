@@ -1,0 +1,39 @@
+{
+  "repo_default": "C:\\Users\\USERNAME\\Downloads\\SignalForge-QX",
+  "shell": "pwsh",
+  "codex_mode": "interactive_no_initial_message",
+  "approval_policy": "on-request",
+  "approvals_reviewer": "auto_review",
+  "sandbox": "workspace-write",
+  "strict_config": true,
+  "live_web_search": true,
+  "modify_global_codex_config": false,
+  "disable_sandbox": false,
+  "copy_prompt_to_clipboard": true,
+  "scientific_final_access_default": false,
+  "explicit_switch": "-AuthorizeFinalAfterFreeze",
+  "wsl_bridge": "scripts/Invoke-SignalForge.ps1",
+  "broad_wsl_allow_rule": false,
+  "prerequisites": [
+    "PowerShell 7",
+    "Windows x64",
+    "WSL2 Ubuntu initialized with non-root user",
+    "Windows NVIDIA driver with WSL CUDA",
+    "internet access",
+    "disk capacity",
+    "Codex login/account access"
+  ],
+  "automatic_prerequisites": [
+    "portable Node if no suitable Node",
+    "project-local native Codex CLI if not supported",
+    "rootless micromamba",
+    "isolated Python CUDA candidate environment",
+    "CUDA objective smoke"
+  ],
+  "may_require_human": [
+    "WSL first installation/reboot/user setup",
+    "NVIDIA driver update",
+    "Codex first login/workspace trust/admin policy",
+    "missing external API keys"
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "active_workstream": "minimal six-fit proposal replaces continuation of 36-fit programme; archived 36-fit evidence unchanged",
+  "admission_contract_id": "6b561df29873be658ef93edd0a8c339d17f46c1d834a233fa5321e51b2723a57",
+  "bar_gate": "Deferred unless valid paired SIA comparison shows useful signal; separately freeze useful-signal rule and BAR protocol before new output access. No BAR fitting admitted by this plan.",
+  "comparison_contract": {
+    "all_rows_required": true,
+    "baseline_by_track": {
+      "Main-A": "historical",
+      "Nested-B": "linear_quantile"
+    },
+    "matching": [
+      "exact decision dates",
+      "assets",
+      "seeds",
+      "targets",
+      "fold/source identities",
+      "shared scoring normalizer"
+    ],
+    "metrics": [
+      "normalized_pinball",
+      "raw_pinball",
+      "p99_absolute_quantile",
+      "catastrophe_count",
+      "quantile_support",
+      "seed_stability"
+    ],
+    "new_performance_claim": null,
+    "new_predictions_exist": false,
+    "no_favorable_exclusions": true
+  },
+  "deferred": [
+    "ABC",
+    "full HPO",
+    "source certification",
+    "Nested-B 2021 underpowered branch",
+    "2392-fit forward v3.2",
+    "remaining 36-fit programme"
+  ],
+  "execution_authorized": false,
+  "family": "rgmf_gru",
+  "final_qualified": false,
+  "fits": [
+    {
+      "family": "rgmf_gru",
+      "fold_id": "20cd465aa6e731ba2b2e03dce88c5d75f0e09bf63979c53452cf741e0c46b82a",
+      "information": "I3",
+      "normalizer_id": "a1f1b53d0bf844833dd0b5fd444ff93f913097c7d3cd1a72c6b4d03e518cf722",
+      "seed": 11,
+      "settings": {
+        "epochs": 100,
+        "lr": 0.001,
+        "width": 16
+      },
+      "sia_manifest_id": "594b0946b31524dbc6a689f07789629d4c7185504c75196e6c2742a56f78ef19",
+      "source_id": "a1f25a0ffe575db470588c33f94c37f58148884c8559980449f600913b590a70",
+      "track": "Main-A",
+      "year": 2020
+    },
+    {
+      "family": "rgmf_gru",
+      "fold_id": "20cd465aa6e731ba2b2e03dce88c5d75f0e09bf63979c53452cf741e0c46b82a",
+      "information": "I3",
+      "normalizer_id": "a1f1b53d0bf844833dd0b5fd444ff93f913097c7d3cd1a72c6b4d03e518cf722",
+      "seed": 37,
+      "settings": {
+        "epochs": 100,
+        "lr": 0.001,
+        "width": 16
+      },
+      "sia_manifest_id": "594b0946b31524dbc6a689f07789629d4c7185504c75196e6c2742a56f78ef19",
+      "source_id": "a1f25a0ffe575db470588c33f94c37f58148884c8559980449f600913b590a70",
+      "track": "Main-A",
+      "year": 2020
+    },
+    {
+      "family": "rgmf_gru",
+      "fold_id": "20cd465aa6e731ba2b2e03dce88c5d75f0e09bf63979c53452cf741e0c46b82a",
+      "information": "I3",
+      "normalizer_id": "a1f1b53d0bf844833dd0b5fd444ff93f913097c7d3cd1a72c6b4d03e518cf722",
+      "seed": 71,
+      "settings": {
+        "epochs": 100,
+        "lr": 0.001,
+        "width": 16
+      },
+      "sia_manifest_id": "594b0946b31524dbc6a689f07789629d4c7185504c75196e6c2742a56f78ef19",
+      "source_id": "a1f25a0ffe575db470588c33f94c37f58148884c8559980449f600913b590a70",
+      "track": "Main-A",
+      "year": 2020
+    },
+    {
+      "family": "rgmf_gru",
+      "fold_id": "000b8d624792b1c4fb9a690e63754d8947d1aa0fddc62615aebbc98fccc8ef45",
+      "information": "I4",
+      "normalizer_id": "bffa64ed44fb2b90339fc81caeafbcdf1d7bd822078e44249ca9b4210fb15d64",
+      "seed": 11,
+      "settings": {
+        "epochs": 100,
+        "lr": 0.001,
+        "width": 16
+      },
+      "sia_manifest_id": "9abc9a4eebb4ab3c1eb8eecd36f84971f305d59563e9253f0395b33421bc66d1",
+      "source_id": "7e3c174202b59bbe87b48329dd6faf03adb39e24ccf3d4f0c513ca88fb420b1c",
+      "track": "Nested-B",
+      "year": 2022
+    },
+    {
+      "family": "rgmf_gru",
+      "fold_id": "000b8d624792b1c4fb9a690e63754d8947d1aa0fddc62615aebbc98fccc8ef45",
+      "information": "I4",
+      "normalizer_id": "bffa64ed44fb2b90339fc81caeafbcdf1d7bd822078e44249ca9b4210fb15d64",
+      "seed": 37,
+      "settings": {
+        "epochs": 100,
+        "lr": 0.001,
+        "width": 16
+      },
+      "sia_manifest_id": "9abc9a4eebb4ab3c1eb8eecd36f84971f305d59563e9253f0395b33421bc66d1",
+      "source_id": "7e3c174202b59bbe87b48329dd6faf03adb39e24ccf3d4f0c513ca88fb420b1c",
+      "track": "Nested-B",
+      "year": 2022
+    },
+    {
+      "family": "rgmf_gru",
+      "fold_id": "000b8d624792b1c4fb9a690e63754d8947d1aa0fddc62615aebbc98fccc8ef45",
+      "information": "I4",
+      "normalizer_id": "bffa64ed44fb2b90339fc81caeafbcdf1d7bd822078e44249ca9b4210fb15d64",
+      "seed": 71,
+      "settings": {
+        "epochs": 100,
+        "lr": 0.001,
+        "width": 16
+      },
+      "sia_manifest_id": "9abc9a4eebb4ab3c1eb8eecd36f84971f305d59563e9253f0395b33421bc66d1",
+      "source_id": "7e3c174202b59bbe87b48329dd6faf03adb39e24ccf3d4f0c513ca88fb420b1c",
+      "track": "Nested-B",
+      "year": 2022
+    }
+  ],
+  "folds": {
+    "Main-A:2020": {
+      "fold_id": "20cd465aa6e731ba2b2e03dce88c5d75f0e09bf63979c53452cf741e0c46b82a",
+      "information": "I3",
+      "minimum_training_dates": 156,
+      "normalizer_id": "a1f1b53d0bf844833dd0b5fd444ff93f913097c7d3cd1a72c6b4d03e518cf722",
+      "raw_context_hash": "43de4bca63cced3c6497314f1b2c6370d26069aa1bf008006df3e3feeb651d70",
+      "sia_manifest_id": "594b0946b31524dbc6a689f07789629d4c7185504c75196e6c2742a56f78ef19",
+      "source_id": "a1f25a0ffe575db470588c33f94c37f58148884c8559980449f600913b590a70",
+      "target_hash": "4f5ce6c44b0235a949a03ef0675aa8137ebe786cfdfc2e29c3938406b8865693",
+      "test_distinct_dates": 52,
+      "train_distinct_dates": 467
+    },
+    "Nested-B:2022": {
+      "fold_id": "000b8d624792b1c4fb9a690e63754d8947d1aa0fddc62615aebbc98fccc8ef45",
+      "information": "I4",
+      "minimum_training_dates": 52,
+      "normalizer_id": "bffa64ed44fb2b90339fc81caeafbcdf1d7bd822078e44249ca9b4210fb15d64",
+      "raw_context_hash": "c472e20cc01e3862d42f63bb514ed909708201e2a23ccfbf6f4764b42591cf70",
+      "sia_manifest_id": "9abc9a4eebb4ab3c1eb8eecd36f84971f305d59563e9253f0395b33421bc66d1",
+      "source_id": "7e3c174202b59bbe87b48329dd6faf03adb39e24ccf3d4f0c513ca88fb420b1c",
+      "target_hash": "3aa27a062a524312a4275eeb5b393bfab1a87a87e7e1d868592a78ffa65e25f1",
+      "test_distinct_dates": 52,
+      "train_distinct_dates": 92
+    }
+  },
+  "historical_reference_scores": {
+    "Main-A": {
+      "family": "historical",
+      "score": 0.246973383
+    },
+    "Nested-B": {
+      "family": "linear_quantile",
+      "score": 0.215321149
+    }
+  },
+  "measured_mini_pilot": null,
+  "new_gpu_fits": 0,
+  "numeric_gpu_ceiling": null,
+  "parent_plan_id": "d661ba9ea6b672267ede37fbec45cd485a932629fcf3be05a427e47b2af55ff3",
+  "parent_plan_sha256": "98b0aeae20e8368a11ad3c19746ac26473fcc4a446ff2ff3291ec335030b836f",
+  "plan_id": "c7e3ea333bc0829c044b21b8ce805e553a1432f2e1b84c49d6bf7d42043c60e0",
+  "planned_fits": 6,
+  "protocol_id": "sgqx-v3.3-minimal-sia-rgmf-gru-smoke-v1",
+  "reference_score_scope": "Previously recorded aggregate reference values only; not exact-fold paired scores, not new results or gains. Load and validate immutable matching baseline predictions before comparison.",
+  "reserved_access": false,
+  "scope": "RETROSPECTIVE_SMOKE_DIAGNOSTIC_ONLY",
+  "seeds": [
+    11,
+    37,
+    71
+  ],
+  "sia_fix": "already implemented and scoped-tested; unchanged",
+  "source_tree_hash": "fde7a45ef5fd21e0e69ba169adc5c253f6aa2d0ffd0d594ec91c089574ad01fa",
+  "status": "PROPOSED_BLOCKED_NOT_AUTHORIZED",
+  "version": 1
+}

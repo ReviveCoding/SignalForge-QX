@@ -1,0 +1,11 @@
+{
+  "new_GPU_training": 0,
+  "outer_access_before_refit": false,
+  "parent_OOF_configuration_id": "0972b8982d8ca199d93b03dd887216a879aa82b233bb7b63f0fadb94cc994231",
+  "parent_code_hash": "241ce51a591d6aec21eae61873b8e795801c94baa7e029a1ea9c47022c4cb9c7",
+  "protocol_id": "sgqx-v34-calibration-native-JSON-serialization-v1r1",
+  "repair": "numpy scalars converted to exact native JSON equivalents before hash; calibration arithmetic, candidates, selection and support unchanged",
+  "reserved_access": false,
+  "revision_code_hash": "edc0ce60b464e49ab5878bcff94d0190266ff91c800030b90d5e43b933a85f9b",
+  "revision_id": "e1fedfabf3d73a36c56670038cc01365ad2ab640b9cd0f163c6232e6879d5521"
+}

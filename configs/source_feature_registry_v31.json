@@ -1,0 +1,51 @@
+{
+  "schema": "source_feature_registry_v31",
+  "registered_at": "2026-10-03T15:31:00Z",
+  "selection": "outcome_blind_semantic_features",
+  "market": [
+    {"name":"market_return_1w","source":"market","field":"return_1w","entity":"ASSET","unit":"fraction"},
+    {"name":"market_return_4w","source":"market","field":"return_4w","entity":"ASSET","unit":"fraction"},
+    {"name":"market_realized_vol_20","source":"market","field":"realized_vol_20","entity":"ASSET","unit":"daily_fraction"},
+    {"name":"market_log_volume","source":"market","field":"log_volume","entity":"ASSET","unit":"log1p_shares"}
+  ],
+  "macro": [
+    {"name":"macro_cpi","source":"macro","field":"value","entity":"CPIAUCSL","unit_from_metadata":true},
+    {"name":"macro_indpro","source":"macro","field":"value","entity":"INDPRO","unit_from_metadata":true},
+    {"name":"macro_unrate","source":"macro","field":"value","entity":"UNRATE","unit_from_metadata":true},
+    {"name":"macro_dgs2","source":"macro","field":"value","entity":"DGS2","unit_from_metadata":true},
+    {"name":"macro_dgs10","source":"macro","field":"value","entity":"DGS10","unit_from_metadata":true}
+  ],
+  "cftc": [
+    {"name":"cftc_dealer","source":"cftc","field":"Dealer_net_fraction_open_interest","entity":"ASSET","unit":"fraction_open_interest"},
+    {"name":"cftc_asset_manager","source":"cftc","field":"Asset_Mgr_net_fraction_open_interest","entity":"ASSET","unit":"fraction_open_interest"},
+    {"name":"cftc_leveraged_money","source":"cftc","field":"Lev_Money_net_fraction_open_interest","entity":"ASSET","unit":"fraction_open_interest"},
+    {"name":"cftc_producer_merchant","source":"cftc","field":"Prod_Merc_net_fraction_open_interest","entity":"ASSET","unit":"fraction_open_interest"},
+    {"name":"cftc_swap","source":"cftc","field":"Swap_net_fraction_open_interest","entity":"ASSET","unit":"fraction_open_interest"},
+    {"name":"cftc_managed_money","source":"cftc","field":"M_Money_net_fraction_open_interest","entity":"ASSET","unit":"fraction_open_interest"},
+    {"name":"cftc_other_reportable","source":"cftc","field":"Other_Rept_net_fraction_open_interest","entity":"ASSET","unit":"fraction_open_interest"}
+  ],
+  "eia": [
+    {"name":"eia_commercial_crude_level","source":"eia","field":"commercial_crude_value","entity":"ASSET","unit":"million_barrels"},
+    {"name":"eia_commercial_crude_change","source":"eia","field":"commercial_crude_change","entity":"ASSET","unit":"million_barrels"},
+    {"name":"eia_cushing_level","source":"eia","field":"cushing_value","entity":"ASSET","unit":"million_barrels"},
+    {"name":"eia_cushing_change","source":"eia","field":"cushing_change","entity":"ASSET","unit":"million_barrels"},
+    {"name":"eia_gasoline_change","source":"eia","field":"gasoline_change","entity":"ASSET","unit":"million_barrels"},
+    {"name":"eia_distillate_change","source":"eia","field":"distillate_change","entity":"ASSET","unit":"million_barrels"}
+  ],
+  "nport": [
+    {"name":"nport_external_flow","source":"nport","field":"external_flow","entity":"ASSET","unit":"USD"},
+    {"name":"nport_reinvestment","source":"nport","field":"reinvestment","entity":"ASSET","unit":"USD"},
+    {"name":"nport_sales","source":"nport","field":"sales","entity":"ASSET","unit":"USD"},
+    {"name":"nport_redemptions","source":"nport","field":"redemptions","entity":"ASSET","unit":"USD"},
+    {"name":"nport_reported_end_net_assets","source":"nport","field":"reported_end_net_assets","entity":"ASSET","unit":"USD"},
+    {"name":"nport_holding_count","source":"nport","field":"holding_count","entity":"ASSET","unit":"count"},
+    {"name":"nport_top10_abs_percentage","source":"nport","field":"top10_abs_percentage","entity":"ASSET","unit":"percent_net_assets"},
+    {"name":"nport_gross_abs_percentage","source":"nport","field":"gross_abs_percentage","entity":"ASSET","unit":"percent_net_assets"}
+  ],
+  "source_applicability": {
+    "eia": {"USO": true, "SPY": false, "QQQ": false, "IEF": false, "TLT": false, "GLD": false, "SLV": false, "UNG": false},
+    "cftc": {"SPY": true, "QQQ": true, "IEF": true, "TLT": true, "GLD": true, "SLV": true, "USO": true, "UNG": true},
+    "nport": {"SPY": true, "QQQ": true, "IEF": true, "TLT": true, "GLD": false, "SLV": false, "USO": false, "UNG": false}
+  },
+  "claim_boundary": "Missing/not-applicable sources remain missing with explicit masks; no zeros are inserted for absent economic measurements. Feature selection is semantic and preregistered, not chosen by prediction outcomes."
+}

@@ -1,0 +1,22 @@
+{
+  "status": "proposed_before_data_execution",
+  "mean_loss": "mean(((y-mu)/shared_scale)**2)",
+  "quantile_loss": "mean(pinball(y-Q)/shared_scale)",
+  "shared_normalizer": true,
+  "calibration": {
+    "order": "frozen ensemble then fit calibrator",
+    "minimum_distinct_dates": {
+      "0.05": 52,
+      "0.1": 39,
+      "0.5": 20,
+      "0.9": 39,
+      "0.95": 52
+    },
+    "insufficient_support": "identity_per_quantile_and_report_reason",
+    "rearrangement": "registered_once_after_correction",
+    "guaranteed_coverage": false
+  },
+  "cash_objective": "same-horizon forecast mu_total - as_of_cash_return",
+  "probability_metrics": "only_with_registered_probability_head_or_qualified_CDF_conversion",
+  "final_denominator": "fixed_outcome_blind_eligible_grid_with_registered_fallback_and_missingness_report"
+}

@@ -1,0 +1,22 @@
+{
+  "source_definitions": "references/data_sources_v1.json",
+  "status": "must_reverify_during_P01_P02",
+  "allowed_primary_domains": [
+    "cftc.gov",
+    "sec.gov",
+    "fred.stlouisfed.org",
+    "eia.gov",
+    "alphavantage.co",
+    "api.tiingo.com"
+  ],
+  "follow_redirect_requires_allowed_final_domain": true,
+  "paid_downloads_authorized": false,
+  "public_download_execution_requires_explicit_execute": true,
+  "credentials_from_environment_only": true,
+  "unqualified_data_replaced_with_synthetic": false,
+  "synthetic_fixture_directory": "tests/fixtures/synthetic",
+  "redistribution_review_required": true,
+  "tier_A_requires_version_and_public_timing_evidence": true,
+  "market_price_block_does_not_change_target": true,
+  "real_data_downloads_in_this_v2_handoff": false
+}

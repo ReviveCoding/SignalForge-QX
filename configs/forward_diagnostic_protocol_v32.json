@@ -1,0 +1,21 @@
+{
+  "protocol_id": "sgqx-v3.2-forward-diagnostic",
+  "claim_scope": "new prospective P0 experiment; no retrospective H2/H3 completion claim",
+  "original_protocol_changed": false,
+  "cohort": {"policy": "after_actual_verified_operational_freeze_only", "past_development_consumed": true, "reserved_interval_access": false, "evaluation_blocks": 2, "distinct_mature_dates_per_block": 52, "minimum_train_dates": 156, "assets": ["SPY", "QQQ", "IEF", "TLT", "GLD", "SLV", "USO", "UNG"]},
+  "tracks": {"Main-A": "I3", "Nested-B": "I4"},
+  "families": ["lightgbm", "rgmf_gru"],
+  "candidate_policy": "RGMF GRU selected by registered gated recurrent mechanism, not ranking historical pilot or outer performance",
+  "seeds": [11, 37, 71],
+  "hpo": {"trials_per_family_fold": 20, "inner_seed": 11, "selection": "minimum inner-only equal-date normalized pinball, deterministic config-order tie break", "lightgbm": "20 geometrically spaced regularization values from 0.0001 through 10000; 100 rounds", "rgmf_gru": {"width": [8, 16, 32, 48, 64], "lr": [0.0003, 0.001, 0.003, 0.01], "epochs": 100}, "budget_policy": "equal trial opportunities plus equal hard tuning seconds per family; entire paired fold blocked if either exhausts allocation; no favorable completed-trial selection"},
+  "matching": ["exact input feature values including age/coverage/masks", "context length", "decision-date-asset keys", "target basis/horizon/maturity", "train-only shared normalizer", "chronological purged inner/outer folds", "tuning opportunities and compute allocation", "same lease and hardware"],
+  "preprocessing_new_only": {"metadata_age": "log1p(nonnegative days); fixed one-day unit; no fitted 1e-8 age scaling", "coverage_masks": "fixed [0,1] semantic unit; no variance division", "other_numeric": "train-only median and standard deviation; training-constant columns mapped to zero with availability mask retained; no test-estimated scale", "historical_fits_changed": false},
+  "outages": {"seed": 731, "blocks_weeks": [1, 2, 4, 8], "sources": ["macro", "cftc", "eia", "nport"], "policy": "hash(protocol, track, source, first actual prospective origin, seed) generates schedule before forecasts/outcomes; mask source and all dependency descendants; rebuild ages/observed/coverage consistently; no retraining for frozen intervention"},
+  "retrained_components": ["no_age", "no_coverage", "fixed_gate", "concat_capacity_matched", "linear_gate", "base_frozen_vs_joint"],
+  "transport": {"groups": "leave one physical asset out; no held-out label embedding or normalizer; unknown group uses pooled source-group scale", "retrained_refit_separate": true},
+  "ssl": {"comparison": "train-cutoff-only pretraining versus identical supervised downstream; no reserved or future contexts", "pretrain_hash_required": true},
+  "statistics": {"primary": "equal eligible assets within date; seed-average loss within date; equal dates", "blocks_weeks": [4, 8, 13], "draws": 2000, "multiplicity": "Holm across F2/F3 and all six component contrasts as one family; unexecuted members retained null; exploratory asset/year/seed diagnostics separately BY", "F2": "age-aware LightGBM minus frozen RGMF GRU on identical keys", "F3": "paired loss-degradation difference under frozen outages", "predictive_success": "positive paired normalized-pinball improvement with Holm-adjusted p<=0.05 and interval excluding zero; no guaranteed coverage/economics claim"},
+  "budget": {"requested_ceiling_gpu_seconds": 0, "authorized_additional_gpu_seconds": 0, "resource_policy": "execution requires a separately measured and admitted bill; unspent sgqx-v3.1 allowance is not an automatic new-study allocation", "fit_reservation_seconds": 300, "parent_ledger_reuse": false, "existing_ceilings_unchanged": [43200, 3600, 21600]},
+  "required_gates": ["exact materialized/frozen plan and inputs", "separate run/bill authorization", "current full source-bound validation", "original source clocks qualified", "operational freeze verified", "new future cohort unseen", "conservative cost within admitted immutable ceiling"],
+  "strict_final_authorization": false
+}

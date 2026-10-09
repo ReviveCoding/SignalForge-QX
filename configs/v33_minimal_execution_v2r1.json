@@ -1,0 +1,177 @@
+{
+  "bar_signal_rule": {
+    "every_seed_better_than_both_controls": true,
+    "minimum_relative_gain_both_controls_both_folds": 0.05,
+    "no_catastrophes_or_crossings": true,
+    "requires_new_BAR_contract_and_mature_prequential_OOF": true
+  },
+  "caps": {
+    "bar": 1800,
+    "pilot": 300,
+    "sia": 1800
+  },
+  "control_missing": {
+    "Main-A:2020": [],
+    "Nested-B:2022": []
+  },
+  "data_bundles": {
+    "Main-A:2020": "artifacts/v33_minimal_v2_data/8f3e99779d60eba643ae18b6e9c3ec414060c299ccaaa296ef9bdfd138d7ac82",
+    "Nested-B:2022": "artifacts/v33_minimal_v2_data/9b1ae733eb41e9cec9993217fc34de3921b5b8fce8796c393b724c22774d2acf"
+  },
+  "execution_source_hash": "471e70eec0fd912ae1ae652efb9f494f3cc28b371c4f5c0e4d2e7f21abb5e870",
+  "fits": [
+    {
+      "family": "rgmf_gru",
+      "fold_id": "20cd465aa6e731ba2b2e03dce88c5d75f0e09bf63979c53452cf741e0c46b82a",
+      "information": "I3",
+      "normalizer_id": "a1f1b53d0bf844833dd0b5fd444ff93f913097c7d3cd1a72c6b4d03e518cf722",
+      "seed": 11,
+      "settings": {
+        "epochs": 100,
+        "lr": 0.001,
+        "width": 16
+      },
+      "sia_manifest_id": "594b0946b31524dbc6a689f07789629d4c7185504c75196e6c2742a56f78ef19",
+      "source_id": "a1f25a0ffe575db470588c33f94c37f58148884c8559980449f600913b590a70",
+      "track": "Main-A",
+      "year": 2020
+    },
+    {
+      "family": "rgmf_gru",
+      "fold_id": "20cd465aa6e731ba2b2e03dce88c5d75f0e09bf63979c53452cf741e0c46b82a",
+      "information": "I3",
+      "normalizer_id": "a1f1b53d0bf844833dd0b5fd444ff93f913097c7d3cd1a72c6b4d03e518cf722",
+      "seed": 37,
+      "settings": {
+        "epochs": 100,
+        "lr": 0.001,
+        "width": 16
+      },
+      "sia_manifest_id": "594b0946b31524dbc6a689f07789629d4c7185504c75196e6c2742a56f78ef19",
+      "source_id": "a1f25a0ffe575db470588c33f94c37f58148884c8559980449f600913b590a70",
+      "track": "Main-A",
+      "year": 2020
+    },
+    {
+      "family": "rgmf_gru",
+      "fold_id": "20cd465aa6e731ba2b2e03dce88c5d75f0e09bf63979c53452cf741e0c46b82a",
+      "information": "I3",
+      "normalizer_id": "a1f1b53d0bf844833dd0b5fd444ff93f913097c7d3cd1a72c6b4d03e518cf722",
+      "seed": 71,
+      "settings": {
+        "epochs": 100,
+        "lr": 0.001,
+        "width": 16
+      },
+      "sia_manifest_id": "594b0946b31524dbc6a689f07789629d4c7185504c75196e6c2742a56f78ef19",
+      "source_id": "a1f25a0ffe575db470588c33f94c37f58148884c8559980449f600913b590a70",
+      "track": "Main-A",
+      "year": 2020
+    },
+    {
+      "family": "rgmf_gru",
+      "fold_id": "000b8d624792b1c4fb9a690e63754d8947d1aa0fddc62615aebbc98fccc8ef45",
+      "information": "I4",
+      "normalizer_id": "bffa64ed44fb2b90339fc81caeafbcdf1d7bd822078e44249ca9b4210fb15d64",
+      "seed": 11,
+      "settings": {
+        "epochs": 100,
+        "lr": 0.001,
+        "width": 16
+      },
+      "sia_manifest_id": "9abc9a4eebb4ab3c1eb8eecd36f84971f305d59563e9253f0395b33421bc66d1",
+      "source_id": "7e3c174202b59bbe87b48329dd6faf03adb39e24ccf3d4f0c513ca88fb420b1c",
+      "track": "Nested-B",
+      "year": 2022
+    },
+    {
+      "family": "rgmf_gru",
+      "fold_id": "000b8d624792b1c4fb9a690e63754d8947d1aa0fddc62615aebbc98fccc8ef45",
+      "information": "I4",
+      "normalizer_id": "bffa64ed44fb2b90339fc81caeafbcdf1d7bd822078e44249ca9b4210fb15d64",
+      "seed": 37,
+      "settings": {
+        "epochs": 100,
+        "lr": 0.001,
+        "width": 16
+      },
+      "sia_manifest_id": "9abc9a4eebb4ab3c1eb8eecd36f84971f305d59563e9253f0395b33421bc66d1",
+      "source_id": "7e3c174202b59bbe87b48329dd6faf03adb39e24ccf3d4f0c513ca88fb420b1c",
+      "track": "Nested-B",
+      "year": 2022
+    },
+    {
+      "family": "rgmf_gru",
+      "fold_id": "000b8d624792b1c4fb9a690e63754d8947d1aa0fddc62615aebbc98fccc8ef45",
+      "information": "I4",
+      "normalizer_id": "bffa64ed44fb2b90339fc81caeafbcdf1d7bd822078e44249ca9b4210fb15d64",
+      "seed": 71,
+      "settings": {
+        "epochs": 100,
+        "lr": 0.001,
+        "width": 16
+      },
+      "sia_manifest_id": "9abc9a4eebb4ab3c1eb8eecd36f84971f305d59563e9253f0395b33421bc66d1",
+      "source_id": "7e3c174202b59bbe87b48329dd6faf03adb39e24ccf3d4f0c513ca88fb420b1c",
+      "track": "Nested-B",
+      "year": 2022
+    }
+  ],
+  "ledgers": {
+    "bar": "/home/USERNAME/.local/share/signalforge-qx-v33-dev/isolated-engineering/ledger/v33_minimal_v2_bar_compute.sqlite",
+    "pilot": "/home/USERNAME/.local/share/signalforge-qx-v33-dev/isolated-engineering/ledger/v33_minimal_v2_pilot_compute.sqlite",
+    "sia": "/home/USERNAME/.local/share/signalforge-qx-v33-dev/isolated-engineering/ledger/v33_minimal_v2_sia_compute.sqlite"
+  },
+  "mini_pilot_design": {
+    "cost_pilot_epochs": 100,
+    "cost_pilot_seeds": [
+      11
+    ],
+    "full_fit_timeout_seconds": 120,
+    "integration_epochs": 2,
+    "integration_rows": 32,
+    "pilot_fit_timeout_seconds": 90,
+    "tracks": [
+      "Main-A",
+      "Nested-B"
+    ]
+  },
+  "original_preservation": {
+    "original_files_checked": 357,
+    "original_ledgers": {
+      "development_compute.sqlite": {
+        "ceiling_seconds": 43200.0,
+        "charged_seconds": 42907.26968447321,
+        "charges_digest": "2705b3d5e54f99b4d5813cdab40a3de9ab9dfe849315f46f95075c47953748cb",
+        "entries": 3610,
+        "present": true
+      },
+      "successor_gpu_full_compute.sqlite": {
+        "ceiling_seconds": 21600.0,
+        "charged_seconds": 5234.51164490595,
+        "charges_digest": "bac9107f758787fa285d5cfad37ffdbdc8d4d96416065604eeaff824cc545150",
+        "entries": 597,
+        "present": true
+      },
+      "successor_gpu_pilot_compute.sqlite": {
+        "ceiling_seconds": 3600.0,
+        "charged_seconds": 490.30352762198163,
+        "charges_digest": "26e135074fda6e2474276a8d4fedd65f4e828ae6578f0100ee83c169f0db82b6",
+        "entries": 18,
+        "present": true
+      }
+    },
+    "original_source_hash": "7cdf374c83afd29e07c79e2ea8a0cc10ff2cad3637cee6ff01fa95ba9f7049bf",
+    "unchanged": true
+  },
+  "parent_ledger_reuse": false,
+  "plan_id": "fbbfe8c6cf219ce83f3cc7ff5524e3a66fca8023e6fe3261ca7af2a233ee2117",
+  "prior_execution_plan_id": "3af939a27905b10857149ac1bcea27356e1b52ef300f949fd3e329c8cd9c65af",
+  "protocol_id": "sgqx-v3.3-minimal-sia-execution-v2",
+  "qualified_for_final": false,
+  "reserved_access": false,
+  "revision_reason": "Telemetry stage keyword collision only; numeric model/SIA unchanged; failed attempt and original charge retained",
+  "user_instruction_sha256": "4d5f6f7e763b98f10ad5f9b0d958082ac3d63949d054a3b1f92a8a5abc2e7b6f",
+  "v1_plan_id": "c7e3ea333bc0829c044b21b8ce805e553a1432f2e1b84c49d6bf7d42043c60e0",
+  "v1_plan_sha256": "6cc7c670d8a352f9cd1c095949ca1083ecf6b6deefeb1e2b6a1d268b7ae39665"
+}

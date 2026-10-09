@@ -1,0 +1,249 @@
+{
+  "version": "v3.1-preregistered",
+  "outcome_blind": true,
+  "sources": {
+    "cftc": [
+      {
+        "name": "cftc_Dealer_net_fraction_open_interest",
+        "source": "cftc",
+        "field": "Dealer_net_fraction_open_interest",
+        "entity": "ASSET",
+        "unit": "fraction_open_interest",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "cftc_Asset_Mgr_net_fraction_open_interest",
+        "source": "cftc",
+        "field": "Asset_Mgr_net_fraction_open_interest",
+        "entity": "ASSET",
+        "unit": "fraction_open_interest",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "cftc_Lev_Money_net_fraction_open_interest",
+        "source": "cftc",
+        "field": "Lev_Money_net_fraction_open_interest",
+        "entity": "ASSET",
+        "unit": "fraction_open_interest",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "cftc_Prod_Merc_net_fraction_open_interest",
+        "source": "cftc",
+        "field": "Prod_Merc_net_fraction_open_interest",
+        "entity": "ASSET",
+        "unit": "fraction_open_interest",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "cftc_Swap_net_fraction_open_interest",
+        "source": "cftc",
+        "field": "Swap_net_fraction_open_interest",
+        "entity": "ASSET",
+        "unit": "fraction_open_interest",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "cftc_M_Money_net_fraction_open_interest",
+        "source": "cftc",
+        "field": "M_Money_net_fraction_open_interest",
+        "entity": "ASSET",
+        "unit": "fraction_open_interest",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "cftc_Other_Rept_net_fraction_open_interest",
+        "source": "cftc",
+        "field": "Other_Rept_net_fraction_open_interest",
+        "entity": "ASSET",
+        "unit": "fraction_open_interest",
+        "mapping": false,
+        "percentile_window": 0
+      }
+    ],
+    "eia": [
+      {
+        "name": "eia_commercial_crude_change",
+        "source": "eia",
+        "field": "commercial_crude_change",
+        "entity": "ASSET",
+        "unit": "million_barrels",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "eia_commercial_crude_value",
+        "source": "eia",
+        "field": "commercial_crude_value",
+        "entity": "ASSET",
+        "unit": "million_barrels",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "eia_cushing_change",
+        "source": "eia",
+        "field": "cushing_change",
+        "entity": "ASSET",
+        "unit": "million_barrels",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "eia_cushing_value",
+        "source": "eia",
+        "field": "cushing_value",
+        "entity": "ASSET",
+        "unit": "million_barrels",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "eia_distillate_change",
+        "source": "eia",
+        "field": "distillate_change",
+        "entity": "ASSET",
+        "unit": "million_barrels",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "eia_gasoline_change",
+        "source": "eia",
+        "field": "gasoline_change",
+        "entity": "ASSET",
+        "unit": "million_barrels",
+        "mapping": false,
+        "percentile_window": 0
+      }
+    ],
+    "macro": [
+      {
+        "name": "macro_CPIAUCSL",
+        "source": "macro",
+        "field": "value",
+        "entity": "CPIAUCSL",
+        "unit": "Index 1982-1984=100",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "macro_INDPRO",
+        "source": "macro",
+        "field": "value",
+        "entity": "INDPRO",
+        "unit": "Index 2017=100",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "macro_UNRATE",
+        "source": "macro",
+        "field": "value",
+        "entity": "UNRATE",
+        "unit": "Percent",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "macro_DGS2",
+        "source": "macro",
+        "field": "value",
+        "entity": "DGS2",
+        "unit": "Percent",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "macro_DGS10",
+        "source": "macro",
+        "field": "value",
+        "entity": "DGS10",
+        "unit": "Percent",
+        "mapping": false,
+        "percentile_window": 0
+      }
+    ],
+    "nport": [
+      {
+        "name": "nport_sales",
+        "source": "nport",
+        "field": "sales",
+        "entity": "ASSET",
+        "unit": "USD",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "nport_redemptions",
+        "source": "nport",
+        "field": "redemptions",
+        "entity": "ASSET",
+        "unit": "USD",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "nport_reinvestment",
+        "source": "nport",
+        "field": "reinvestment",
+        "entity": "ASSET",
+        "unit": "USD",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "nport_external_flow",
+        "source": "nport",
+        "field": "external_flow",
+        "entity": "ASSET",
+        "unit": "USD",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "nport_reported_end_net_assets",
+        "source": "nport",
+        "field": "reported_end_net_assets",
+        "entity": "ASSET",
+        "unit": "USD",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "nport_holding_count",
+        "source": "nport",
+        "field": "holding_count",
+        "entity": "ASSET",
+        "unit": "count",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "nport_top10_abs_percentage",
+        "source": "nport",
+        "field": "top10_abs_percentage",
+        "entity": "ASSET",
+        "unit": "percent_net_assets",
+        "mapping": false,
+        "percentile_window": 0
+      },
+      {
+        "name": "nport_gross_abs_percentage",
+        "source": "nport",
+        "field": "gross_abs_percentage",
+        "entity": "ASSET",
+        "unit": "percent_net_assets",
+        "mapping": false,
+        "percentile_window": 0
+      }
+    ]
+  },
+  "claim_boundary": "Feature identities and units are preregistered semantic transforms; presence of a source does not qualify PIT/final/economic claims."
+}

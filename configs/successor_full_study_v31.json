@@ -1,0 +1,121 @@
+{
+  "conditional_families": [
+    "transformer",
+    "rgmf_transformer"
+  ],
+  "conditional_gate": {
+    "minimum_assets_with_target_coverage": 4,
+    "minimum_independent_mature_decision_dates": 600,
+    "outcome_blind": true
+  },
+  "conditional_gate_scope": "every registered mature training fold; pooled rows never count as dates",
+  "config_hashes": {
+    "configs/completion_extension_v31.json": "e2534a499fdb159d0b7ac6a37b738cb316f5e3a5992642bc7842b4446bbab151",
+    "configs/statistical_contract.json": "e494591cd1436a43ccdec23ff15842b26c31e2214c8d50c600f567e318716934",
+    "configs/study.json": "bf01026057718bc1e96d5a8b805396e20a77dd71b64832ffb9456f19ea3390ae"
+  },
+  "cost_rule": {
+    "gate": "all pilot families compatible; conservative sum <= remaining 21600 seconds",
+    "margin_multiplier": 2.0,
+    "maximum_width_compute_multiplier": 16.0
+  },
+  "families": [
+    "lightgbm",
+    "xgboost",
+    "mlp",
+    "gru",
+    "rgmf_linear",
+    "rgmf_gru"
+  ],
+  "full_gpu_seconds": 21600,
+  "full_ledger": "ledger/successor_gpu_full_compute.sqlite",
+  "outcome_blind": true,
+  "parent_ledger_reuse": false,
+  "pilot_ledger": "ledger/successor_gpu_pilot_compute.sqlite",
+  "plan_version": "successor-full-v1",
+  "plans": {
+    "fixed_setting_development": {
+      "claim_boundary": "fixed-setting development comparisons; no tuned-family superiority claim",
+      "fixed_settings": {
+        "gru": [
+          16,
+          0.001
+        ],
+        "lightgbm": 1.0,
+        "mlp": [
+          16,
+          0.001
+        ],
+        "rgmf_gru": [
+          16,
+          0.001
+        ],
+        "rgmf_linear": [
+          16,
+          0.001
+        ],
+        "xgboost": 1.0
+      },
+      "mode": "fixed_setting_development",
+      "planned_fit_count": 540
+    },
+    "registered_hpo": {
+      "learning_rates": [
+        0.0003,
+        0.001,
+        0.003,
+        0.01
+      ],
+      "mode": "registered_hpo",
+      "neural_widths": [
+        8,
+        16,
+        32,
+        48,
+        64
+      ],
+      "planned_fit_count": 4140,
+      "tree_regularization": "geomspace(0.0001,10000,20)",
+      "trials": 20
+    }
+  },
+  "protocol_id": "sgqx-v3.1-track-gpu",
+  "qualified_for_final": false,
+  "reserved_access": false,
+  "seeds": [
+    11,
+    37,
+    71
+  ],
+  "selection_rule": "first cost-admissible plan in frozen order; never predictive performance",
+  "tracks": {
+    "Main-A": {
+      "information_sets": [
+        "I0",
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "outer_years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ]
+    },
+    "Nested-B": {
+      "information_sets": [
+        "I0",
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "outer_years": [
+        2021,
+        2022
+      ]
+    }
+  }
+}

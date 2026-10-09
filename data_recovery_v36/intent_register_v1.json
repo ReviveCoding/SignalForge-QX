@@ -1,0 +1,53 @@
+{
+  "study_id": "sgqx-public-data-recovery-shadow-v36-v1",
+  "registered_at": "2026-10-08T20:42:25.519196+00:00",
+  "selection_basis": "publisher source availability, missing clock/action/cash evidence; no model scores or labels used",
+  "historical_scope": {
+    "latest_event_date": "2023-12-31",
+    "EIA_windows": [
+      "2010-07",
+      "2023-08",
+      "2023-12"
+    ],
+    "CFTC_year": 2023,
+    "macro_release_window": "January and December 2023",
+    "issuer_scope": {
+      "year": 2023,
+      "primary": [
+        "IEF",
+        "TLT"
+      ],
+      "optional": [
+        "SPY",
+        "QQQ",
+        "GLD",
+        "SLV",
+        "USO",
+        "UNG"
+      ]
+    }
+  },
+  "families": [
+    "EIA archived stocks/corrections",
+    "CFTC 2023 original positioning/corrections",
+    "BLS CPI/employment and Fed G17/H15 historical releases",
+    "issuer 2023 dividends/splits and contemporaneous notices",
+    "historical cash-rate semantics"
+  ],
+  "discovery_official_only": true,
+  "max_http_requests": 60,
+  "max_attempts_per_url": 1,
+  "min_request_interval_seconds": 1.05,
+  "max_response_bytes": 12582912,
+  "max_total_bytes": 262144000,
+  "timeout_seconds": 25,
+  "robots_policy": "respect disallow; 401/403 publisher stop; no retry; robots unavailable fail closed",
+  "reserved_access": false,
+  "mixed_canonical_export_access": false,
+  "real_issuance_allowed": false,
+  "new_model_training": false,
+  "external_emails_sent": false,
+  "trusted_publisher_keys": {},
+  "trusted_reviewer_keys": {},
+  "plan_id": "fe4eef499b0f1b6bd1b99787205c2f0119d714331f7ded1129a885cca1795e13"
+}

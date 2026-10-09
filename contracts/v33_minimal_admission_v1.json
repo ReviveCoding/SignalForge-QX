@@ -1,0 +1,48 @@
+{
+  "bill_binding_fields": [
+    "protocol_id",
+    "plan_id",
+    "source_tree_hash",
+    "pilot_receipt_sha256",
+    "planned_fits",
+    "ledger_path",
+    "conservative_projected_seconds",
+    "ceiling_seconds",
+    "safety_margin"
+  ],
+  "contract_id": "6b561df29873be658ef93edd0a8c339d17f46c1d834a233fa5321e51b2723a57",
+  "contract_version": 1,
+  "default_state": "BLOCKED_NOT_AUTHORIZED",
+  "execution_enabled": false,
+  "ledger_path": "/home/USERNAME/.local/share/signalforge-qx-v33-dev/isolated-engineering/ledger/v33_minimal_sia_v1_compute.sqlite",
+  "legacy_36_fit_checker_applicable": false,
+  "mini_pilot_ledger_path": "/home/USERNAME/.local/share/signalforge-qx-v33-dev/isolated-engineering/ledger/v33_minimal_sia_v1_pilot_compute.sqlite",
+  "mini_pilot_numeric_ceiling": null,
+  "minimum_safety_margin": 1.25,
+  "note": "Specification only; not an execution admission checker. All launches remain disabled until a separately qualified checker and gates exist.",
+  "numeric_gpu_ceiling": null,
+  "parent_ledger_reuse": false,
+  "planned_fits": 6,
+  "protocol_id": "sgqx-v3.3-minimal-sia-rgmf-gru-smoke-v1",
+  "reject_rules": [
+    "missing_or_nonfinite_positive_numeric_ceiling",
+    "projection_above_ceiling",
+    "changed_plan_source_fold_or_pilot_hash",
+    "wrong_fit_count_or_seed_grid",
+    "legacy_authorization_or_ledger",
+    "reserved_access",
+    "unqualified_baseline_or_cuda_execution"
+  ],
+  "required_before_any_launch": [
+    "DEDICATED_SIX_FIT_CHECKER_IMPLEMENTED_AND_TESTED",
+    "EXACT_PLAN_FOLD_SOURCE_SIA_NORMALIZER_HASHES",
+    "EXPLICIT_USER_NUMERIC_CEILING_AND_MINI_PILOT_CEILING",
+    "SEPARATELY_AUTHORIZED_BOUNDED_MEASURED_MINI_PILOT",
+    "IMMUTABLE_OUTCOME_BLIND_MEASURED_BILL_WITH_SAFETY_MARGIN",
+    "CURRENT_SOURCE_BOUND_SIX_FIT_CUDA_EXECUTION_VALIDATION",
+    "SEPARATE_LEDGER_AND_GPU_RESOURCE_LEASE",
+    "QUALIFIED_MATCHED_BASELINE_PREDICTIONS"
+  ],
+  "reserved_access": false,
+  "training_started": false
+}

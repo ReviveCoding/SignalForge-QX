@@ -1,0 +1,214 @@
+{
+  "registered_at": "2026-10-08T20:46:02.088116+00:00",
+  "parent_plan_id": "fe4eef499b0f1b6bd1b99787205c2f0119d714331f7ded1129a885cca1795e13",
+  "rows": [
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2010/2010_07_21/csv/table4.csv",
+      "purpose": "Exact stocks Table4 paired formats; original/revision and unit audit",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2010/2010_07_21/pdf/table4.pdf",
+      "purpose": "Exact stocks Table4 paired formats; original/revision and unit audit",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2010/2010_07_21/wpsr_2010_07_21.html",
+      "purpose": "Dated release context and correction notices",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2010/2010_07_28/csv/table4.csv",
+      "purpose": "Exact stocks Table4 paired formats; original/revision and unit audit",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2010/2010_07_28/pdf/table4.pdf",
+      "purpose": "Exact stocks Table4 paired formats; original/revision and unit audit",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2010/2010_07_28/wpsr_2010_07_28.html",
+      "purpose": "Dated release context and correction notices",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_08_16/csv/table4.csv",
+      "purpose": "Exact stocks Table4 paired formats; original/revision and unit audit",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_08_16/pdf/table4.pdf",
+      "purpose": "Exact stocks Table4 paired formats; original/revision and unit audit",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_08_16/wpsr_2023_08_16.php",
+      "purpose": "Dated release context and correction notices",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_08_23/csv/table4.csv",
+      "purpose": "Exact stocks Table4 paired formats; original/revision and unit audit",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_08_23/pdf/table4.pdf",
+      "purpose": "Exact stocks Table4 paired formats; original/revision and unit audit",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_08_23/wpsr_2023_08_23.php",
+      "purpose": "Dated release context and correction notices",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_12_20/csv/table4.csv",
+      "purpose": "Exact stocks Table4 paired formats; original/revision and unit audit",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_12_20/pdf/table4.pdf",
+      "purpose": "Exact stocks Table4 paired formats; original/revision and unit audit",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_12_20/wpsr_2023_12_20.php",
+      "purpose": "Dated release context and correction notices",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_12_28/csv/table4.csv",
+      "purpose": "Exact stocks Table4 paired formats; original/revision and unit audit",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_12_28/pdf/table4.pdf",
+      "purpose": "Exact stocks Table4 paired formats; original/revision and unit audit",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_12_28/wpsr_2023_12_28.php",
+      "purpose": "Dated release context and correction notices",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "EIA",
+      "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2023/2023_12_28/pdf/appendix_e.pdf",
+      "purpose": "Correction scope: propane versus actual amended Table4",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "BLS",
+      "url": "https://www.bls.gov/news.release/archives/cpi_01122023.htm",
+      "purpose": "Original archived CPI/employment release and embargo/correction semantics",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "BLS",
+      "url": "https://www.bls.gov/news.release/archives/cpi_12122023.htm",
+      "purpose": "Original archived CPI/employment release and embargo/correction semantics",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "BLS",
+      "url": "https://www.bls.gov/news.release/archives/empsit_01062023.htm",
+      "purpose": "Original archived CPI/employment release and embargo/correction semantics",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "BLS",
+      "url": "https://www.bls.gov/news.release/archives/empsit_12082023.htm",
+      "purpose": "Original archived CPI/employment release and embargo/correction semantics",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "FED_G17",
+      "url": "https://www.federalreserve.gov/releases/g17/20230118/default.htm",
+      "purpose": "Historical INDPRO release, units/revision semantics",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "FED_G17",
+      "url": "https://www.federalreserve.gov/releases/g17/20231215/default.htm",
+      "purpose": "Historical INDPRO release, units/revision semantics",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "CFTC",
+      "url": "https://www.cftc.gov/files/dea/history/fut_fin_txt_2023.zip",
+      "purpose": "2023-only annual positioning archive and update ambiguity",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "CFTC",
+      "url": "https://www.cftc.gov/files/dea/history/fut_disagg_txt_2023.zip",
+      "purpose": "2023-only annual positioning archive and update ambiguity",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "CASH_NYFED",
+      "url": "https://markets.newyorkfed.org/api/rates/secured/sofr/search.json?startDate=2023-01-01&endDate=2023-12-31",
+      "purpose": "Server-bounded 2023 cash rate records; not same-horizon cash execution evidence",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "CASH_NYFED",
+      "url": "https://markets.newyorkfed.org/api/rates/unsecured/effr/search.json?startDate=2023-01-01&endDate=2023-12-31",
+      "purpose": "Server-bounded 2023 cash rate records; not same-horizon cash execution evidence",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "CASH_TREASURY",
+      "url": "https://home.treasury.gov/resource-center-data-chart-center/interest-rates/pages/xml?data=daily_treasury_bill_rates&field_tdr_date_value=2023",
+      "purpose": "Official server-bounded 2023 bill quotations and basis semantics",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "ISSUER",
+      "url": "https://www.ishares.com/us/literature/tax-information/2023-ishares-distribution-summary-stamped.pdf",
+      "purpose": "Reconfirm exact 2023 IEF/TLT ex/pay/amount tuples",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "ISSUER",
+      "url": "https://www.ishares.com/us/literature/tax-information/ishares-silver-tax-data-12-31-23-stamped.xls",
+      "purpose": "Issuer SLV 2023 silver-sale expense data, not dividend/no-action proof",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "ISSUER",
+      "url": "https://www.ishares.com/us/literature/tax-information/ishares-silver-trust-broker-stamped.pdf",
+      "purpose": "Issuer explicitly 2023 income/expense statement",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    },
+    {
+      "family": "ISSUER",
+      "url": "https://www.ishares.com/us/literature/tax-information/2023-ishares-us-government-source-income-information-stamped.pdf",
+      "purpose": "IEF/TLT 2023 annual income tax categories, not as-of cash rates",
+      "scope": "PRE_2024_HISTORICAL_DOCUMENT"
+    }
+  ],
+  "unique_candidates": 34,
+  "candidate_selection": "documented historical source templates and official 2023 tax-kit links; no score selection",
+  "not_selected": "current product pages, QII with 2024 pay columns, SEC previously403 URL, login or unknown current archives",
+  "roster_id": "b79a343f8b5195b064d14723d3b6ae70069b5d62d0470e8005ba33b0ac3aa7bc"
+}

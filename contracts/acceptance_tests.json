@@ -1,0 +1,1445 @@
+{
+  "status": "future_implementation_requirements_not_executed_tests",
+  "cases": [
+    {
+      "id": "P00-T01",
+      "phase": "P00",
+      "name": "gpu_identity",
+      "expected": "Device inventory differentiates Laptop from desktop GPU and rejects more than one allocated CUDA device.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p00_gpu_identity.py"
+    },
+    {
+      "id": "P00-T02",
+      "phase": "P00",
+      "name": "cuda_visible",
+      "expected": "CUDA smoke proves actual tensor compute on cuda:0; an unavailable GPU is BLOCKED_GPU, not CPU success.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p00_cuda_visible.py"
+    },
+    {
+      "id": "P00-T03",
+      "phase": "P00",
+      "name": "host_disk",
+      "expected": "WSL virtual free bytes cannot qualify full downloads without host-volume evidence.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p00_host_disk.py"
+    },
+    {
+      "id": "P00-T04",
+      "phase": "P00",
+      "name": "resource_admission",
+      "expected": "Resource estimates exceeding free RAM/VRAM/disk are queued or blocked.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p00_resource_admission.py"
+    },
+    {
+      "id": "P00-T05",
+      "phase": "P00",
+      "name": "version_lock",
+      "expected": "Driver/runtime/framework/compiler versions and actual build capabilities are saved.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p00_version_lock.py"
+    },
+    {
+      "id": "P00-T06",
+      "phase": "P00",
+      "name": "external_process",
+      "expected": "An unrelated CUDA process is not killed and cannot share a heavy lease.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p00_external_process.py"
+    },
+    {
+      "id": "P00-T07",
+      "phase": "P00",
+      "name": "bounded_probe",
+      "expected": "Initial GPU qualification segment is bounded and leaves durable output.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p00_bounded_probe.py"
+    },
+    {
+      "id": "P00-T08",
+      "phase": "P00",
+      "name": "no_global_mutation",
+      "expected": "Setup does not edit global driver, BIOS, WSL config, other repositories, or private environments.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p00_no_global_mutation.py"
+    },
+    {
+      "id": "P01-T01",
+      "phase": "P01",
+      "name": "question_contract",
+      "expected": "Main, nested and auxiliary target/user/decision definitions are explicit.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p01_question_contract.py"
+    },
+    {
+      "id": "P01-T02",
+      "phase": "P01",
+      "name": "literature_trace",
+      "expected": "Every prior-method claim has a primary reference and an implementation-difference record.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p01_literature_trace.py"
+    },
+    {
+      "id": "P01-T03",
+      "phase": "P01",
+      "name": "source_semantics",
+      "expected": "Positioning change is not labeled reported dollar cash flow.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p01_source_semantics.py"
+    },
+    {
+      "id": "P01-T04",
+      "phase": "P01",
+      "name": "access_policy",
+      "expected": "Auth/license/rate-limit/redistribution/size requirements exist for each source.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p01_access_policy.py"
+    },
+    {
+      "id": "P01-T05",
+      "phase": "P01",
+      "name": "mechanism_falsification",
+      "expected": "Each mechanism card includes a competing explanation and falsification criterion.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p01_mechanism_falsification.py"
+    },
+    {
+      "id": "P01-T06",
+      "phase": "P01",
+      "name": "field_dictionary",
+      "expected": "Units, entity keys and reference/public clocks are specified.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p01_field_dictionary.py"
+    },
+    {
+      "id": "P01-T07",
+      "phase": "P01",
+      "name": "novelty_boundary",
+      "expected": "GRU-D/TFT existing concepts are not claimed as novel alone.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p01_novelty_boundary.py"
+    },
+    {
+      "id": "P01-T08",
+      "phase": "P01",
+      "name": "decision_record",
+      "expected": "Dropped sources/methods are logged rather than silently replaced.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p01_decision_record.py"
+    },
+    {
+      "id": "P02-T01",
+      "phase": "P02",
+      "name": "checksum",
+      "expected": "Downloaded bytes are committed only after checksum and expected length checks.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p02_checksum.py"
+    },
+    {
+      "id": "P02-T02",
+      "phase": "P02",
+      "name": "html_as_csv",
+      "expected": "An HTML denial page returned as HTTP 200 is not accepted as CSV.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p02_html_as_csv.py"
+    },
+    {
+      "id": "P02-T03",
+      "phase": "P02",
+      "name": "zip_path",
+      "expected": "Path traversal and oversized archive extraction are rejected.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p02_zip_path.py"
+    },
+    {
+      "id": "P02-T04",
+      "phase": "P02",
+      "name": "auth_retry",
+      "expected": "403 and missing key are not retried indefinitely or bypassed.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p02_auth_retry.py"
+    },
+    {
+      "id": "P02-T05",
+      "phase": "P02",
+      "name": "redaction",
+      "expected": "API keys and private credentials are absent from public logs.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p02_redaction.py"
+    },
+    {
+      "id": "P02-T06",
+      "phase": "P02",
+      "name": "partial_download",
+      "expected": "Interrupted transfer never creates a valid raw receipt.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p02_partial_download.py"
+    },
+    {
+      "id": "P02-T07",
+      "phase": "P02",
+      "name": "immutable_versions",
+      "expected": "Changed bytes create a new version without overwriting prior raw data.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p02_immutable_versions.py"
+    },
+    {
+      "id": "P02-T08",
+      "phase": "P02",
+      "name": "synthetic_separation",
+      "expected": "Synthetic fixtures cannot pass real-source acquisition qualification.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p02_synthetic_separation.py"
+    },
+    {
+      "id": "P03-T01",
+      "phase": "P03",
+      "name": "join_cardinality",
+      "expected": "Unexpected many-to-many joins are detected before aggregation.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p03_join_cardinality.py"
+    },
+    {
+      "id": "P03-T02",
+      "phase": "P03",
+      "name": "zero_missing",
+      "expected": "Actual zero and missing are reported separately.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p03_zero_missing.py"
+    },
+    {
+      "id": "P03-T03",
+      "phase": "P03",
+      "name": "release_eda",
+      "expected": "Reference, release and revision lag distributions are distinct.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p03_release_eda.py"
+    },
+    {
+      "id": "P03-T04",
+      "phase": "P03",
+      "name": "coverage_cohort",
+      "expected": "NPORT coverage and fixed/dynamic cohort composition are reported.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p03_coverage_cohort.py"
+    },
+    {
+      "id": "P03-T05",
+      "phase": "P03",
+      "name": "outlier_audit",
+      "expected": "Extreme true events are not automatically deleted as errors.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p03_outlier_audit.py"
+    },
+    {
+      "id": "P03-T06",
+      "phase": "P03",
+      "name": "unit_conflicts",
+      "expected": "Conflicting units and currencies are flagged and resolved with provenance.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p03_unit_conflicts.py"
+    },
+    {
+      "id": "P03-T07",
+      "phase": "P03",
+      "name": "reserved_blinding",
+      "expected": "Raw QA cannot expose reserved target plots/correlations or model scores.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p03_reserved_blinding.py"
+    },
+    {
+      "id": "P03-T08",
+      "phase": "P03",
+      "name": "row_order",
+      "expected": "Raw row ordering does not change canonical content or aggregate statistics.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p03_row_order.py"
+    },
+    {
+      "id": "P04-T01",
+      "phase": "P04",
+      "name": "availability",
+      "expected": "No feature dependency can have available_at after its decision cutoff.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p04_availability.py"
+    },
+    {
+      "id": "P04-T02",
+      "phase": "P04",
+      "name": "old_revision",
+      "expected": "A later revision of an old reference cannot displace a more recent known reference.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p04_old_revision.py"
+    },
+    {
+      "id": "P04-T03",
+      "phase": "P04",
+      "name": "future_invariance",
+      "expected": "Appending a future revision leaves all earlier snapshots unchanged.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p04_future_invariance.py"
+    },
+    {
+      "id": "P04-T04",
+      "phase": "P04",
+      "name": "two_ages",
+      "expected": "Reference age and release age remain distinct after carry-forward.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p04_two_ages.py"
+    },
+    {
+      "id": "P04-T05",
+      "phase": "P04",
+      "name": "tier_gate",
+      "expected": "Reconstructed timing/vintages cannot receive Tier A without evidence.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p04_tier_gate.py"
+    },
+    {
+      "id": "P04-T06",
+      "phase": "P04",
+      "name": "mapping_time",
+      "expected": "Mappings obey both valid time and known-at time.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p04_mapping_time.py"
+    },
+    {
+      "id": "P04-T07",
+      "phase": "P04",
+      "name": "nport_months",
+      "expected": "MON1-MON3 are mapped from report instructions, not ZIP publication quarter.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p04_nport_months.py"
+    },
+    {
+      "id": "P04-T08",
+      "phase": "P04",
+      "name": "aggregate_cohort",
+      "expected": "Current flow aggregates do not mix reference months or duplicate share classes.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p04_aggregate_cohort.py"
+    },
+    {
+      "id": "P05-T01",
+      "phase": "P05",
+      "name": "session_dst",
+      "expected": "Holiday/DST/early-close cases yield the correct next regular open.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p05_session_dst.py"
+    },
+    {
+      "id": "P05-T02",
+      "phase": "P05",
+      "name": "price_mode",
+      "expected": "P0 weekly benchmark cannot produce P1 execution-qualified economics.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p05_price_mode.py"
+    },
+    {
+      "id": "P05-T03",
+      "phase": "P05",
+      "name": "split_dividend",
+      "expected": "Hand-calculated split/dividend targets match the corporate-action oracle.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p05_split_dividend.py"
+    },
+    {
+      "id": "P05-T04",
+      "phase": "P05",
+      "name": "label_maturity",
+      "expected": "Training requires both label interval completion and publication before cutoff.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p05_label_maturity.py"
+    },
+    {
+      "id": "P05-T05",
+      "phase": "P05",
+      "name": "purge_overlap",
+      "expected": "Actual overlapping label intervals are removed at boundaries.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p05_purge_overlap.py"
+    },
+    {
+      "id": "P05-T06",
+      "phase": "P05",
+      "name": "universe_freeze",
+      "expected": "Candidate exclusions are documented and not selected by final returns.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p05_universe_freeze.py"
+    },
+    {
+      "id": "P05-T07",
+      "phase": "P05",
+      "name": "contamination",
+      "expected": "Previously inspected dates are labeled and cannot become untouched by renaming.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p05_contamination.py"
+    },
+    {
+      "id": "P05-T08",
+      "phase": "P05",
+      "name": "nested_matching",
+      "expected": "I4 and its comparators use exactly matched eligible dates/assets.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p05_nested_matching.py"
+    },
+    {
+      "id": "P06-T01",
+      "phase": "P06",
+      "name": "fit_cutoff",
+      "expected": "Scalers, imputers, selectors and normalization fit only on training rows.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p06_fit_cutoff.py"
+    },
+    {
+      "id": "P06-T02",
+      "phase": "P06",
+      "name": "future_transform",
+      "expected": "Adding future rows does not change an earlier fitted transform.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p06_future_transform.py"
+    },
+    {
+      "id": "P06-T03",
+      "phase": "P06",
+      "name": "feature_lineage",
+      "expected": "Every feature has source IDs and maximum dependency availability.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p06_feature_lineage.py"
+    },
+    {
+      "id": "P06-T04",
+      "phase": "P06",
+      "name": "mask_padding",
+      "expected": "Observed/missing/eligibility/padding masks are not conflated.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p06_mask_padding.py"
+    },
+    {
+      "id": "P06-T05",
+      "phase": "P06",
+      "name": "tree_meta_parity",
+      "expected": "Age, mask and coverage inputs given to RGMF also reach the all-info tree baseline.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p06_tree_meta_parity.py"
+    },
+    {
+      "id": "P06-T06",
+      "phase": "P06",
+      "name": "percentiles",
+      "expected": "Rolling percentiles use only historical information.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p06_percentiles.py"
+    },
+    {
+      "id": "P06-T07",
+      "phase": "P06",
+      "name": "constant_feature",
+      "expected": "Zero variance/constant/missing-only columns do not create NaN loss.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p06_constant_feature.py"
+    },
+    {
+      "id": "P06-T08",
+      "phase": "P06",
+      "name": "cache_identity",
+      "expected": "Changed source/split/transform hashes invalidate feature caches.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p06_cache_identity.py"
+    },
+    {
+      "id": "P07-T01",
+      "phase": "P07",
+      "name": "hand_loss",
+      "expected": "Pinball/mean error agree with hand-calculated examples.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p07_hand_loss.py"
+    },
+    {
+      "id": "P07-T02",
+      "phase": "P07",
+      "name": "cuda_tree",
+      "expected": "LightGBM and XGBoost training really use the qualified CUDA backend.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p07_cuda_tree.py"
+    },
+    {
+      "id": "P07-T03",
+      "phase": "P07",
+      "name": "baseline_strength",
+      "expected": "Baseline regularization/search budgets and interactions are nontrivial and logged.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p07_baseline_strength.py"
+    },
+    {
+      "id": "P07-T04",
+      "phase": "P07",
+      "name": "baseline_save",
+      "expected": "Baseline save/load preserves predictions within declared tolerance.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p07_baseline_save.py"
+    },
+    {
+      "id": "P07-T05",
+      "phase": "P07",
+      "name": "real_vertical",
+      "expected": "One genuine pilot source reaches a verified target, baseline and report.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p07_real_vertical.py"
+    },
+    {
+      "id": "P07-T06",
+      "phase": "P07",
+      "name": "random_labels",
+      "expected": "Random/blocked-permuted targets do not yield unexplained perfect predictive scores.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p07_random_labels.py"
+    },
+    {
+      "id": "P07-T07",
+      "phase": "P07",
+      "name": "eligible_predictions",
+      "expected": "Baseline failures are logged; rows cannot disappear selectively.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p07_eligible_predictions.py"
+    },
+    {
+      "id": "P07-T08",
+      "phase": "P07",
+      "name": "baseline_device",
+      "expected": "A CPU-designated statistical baseline is not falsely reported as CUDA training.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p07_baseline_device.py"
+    },
+    {
+      "id": "P08-T01",
+      "phase": "P08",
+      "name": "tiny_overfit",
+      "expected": "Neural model learns a deterministic tiny target under an adequate test setup.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p08_tiny_overfit.py"
+    },
+    {
+      "id": "P08-T02",
+      "phase": "P08",
+      "name": "finite_gradient",
+      "expected": "BF16/FP32 steps produce finite gradients and loss.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p08_finite_gradient.py"
+    },
+    {
+      "id": "P08-T03",
+      "phase": "P08",
+      "name": "quantile_order",
+      "expected": "Each expert and fused quantile output is ordered.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p08_quantile_order.py"
+    },
+    {
+      "id": "P08-T04",
+      "phase": "P08",
+      "name": "convex_gate",
+      "expected": "Masked sources receive zero and all gates are nonnegative and sum to one.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p08_convex_gate.py"
+    },
+    {
+      "id": "P08-T05",
+      "phase": "P08",
+      "name": "base_fallback",
+      "expected": "All extra sources missing returns the exact declared base output.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p08_base_fallback.py"
+    },
+    {
+      "id": "P08-T06",
+      "phase": "P08",
+      "name": "mean_not_median",
+      "expected": "Portfolio expected return comes from its mean head, not q50.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p08_mean_not_median.py"
+    },
+    {
+      "id": "P08-T07",
+      "phase": "P08",
+      "name": "residual_oof",
+      "expected": "Two-stage residuals use prequential OOF base predictions inside train.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p08_residual_oof.py"
+    },
+    {
+      "id": "P08-T08",
+      "phase": "P08",
+      "name": "inner_hpo",
+      "expected": "HPO/early stopping do not inspect outer-year or reserved targets.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p08_inner_hpo.py"
+    },
+    {
+      "id": "P09-T01",
+      "phase": "P09",
+      "name": "ablation_type",
+      "expected": "Retrained ablation, frozen masking and explanation are labeled separately.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p09_ablation_type.py"
+    },
+    {
+      "id": "P09-T02",
+      "phase": "P09",
+      "name": "information_parity",
+      "expected": "Architecture contrasts share information/target/date hashes.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p09_information_parity.py"
+    },
+    {
+      "id": "P09-T03",
+      "phase": "P09",
+      "name": "invalid_controls",
+      "expected": "E04 is labeled invalid and excluded from winner/promotion logic.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p09_invalid_controls.py"
+    },
+    {
+      "id": "P09-T04",
+      "phase": "P09",
+      "name": "outage_closure",
+      "expected": "Masking a source invalidates all descendants, not only the raw input.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p09_outage_closure.py"
+    },
+    {
+      "id": "P09-T05",
+      "phase": "P09",
+      "name": "transport_rule",
+      "expected": "Zero-shot versus refitted transport are separately registered.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p09_transport_rule.py"
+    },
+    {
+      "id": "P09-T06",
+      "phase": "P09",
+      "name": "scaling_transport",
+      "expected": "Large-scale result does not choose the small-scale weighting rule retroactively.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p09_scaling_transport.py"
+    },
+    {
+      "id": "P09-T07",
+      "phase": "P09",
+      "name": "ssl_cutoff",
+      "expected": "SSL cannot use future/holdout disclosure data or immature labels.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p09_ssl_cutoff.py"
+    },
+    {
+      "id": "P09-T08",
+      "phase": "P09",
+      "name": "trial_ledger",
+      "expected": "Failed/pruned/interrupted attempts remain counted in search logs.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p09_trial_ledger.py"
+    },
+    {
+      "id": "P10-T01",
+      "phase": "P10",
+      "name": "raw_predictions",
+      "expected": "Raw and processed predictions are immutable separate artifacts.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p10_raw_predictions.py"
+    },
+    {
+      "id": "P10-T02",
+      "phase": "P10",
+      "name": "calibration_scope",
+      "expected": "Calibration fits only mature calibration-window targets.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p10_calibration_scope.py"
+    },
+    {
+      "id": "P10-T03",
+      "phase": "P10",
+      "name": "no_calibration_hpo",
+      "expected": "Calibration data do not retune architecture or controller.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p10_no_calibration_hpo.py"
+    },
+    {
+      "id": "P10-T04",
+      "phase": "P10",
+      "name": "ensemble_freeze",
+      "expected": "All member IDs and weights are frozen without test seed selection.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p10_ensemble_freeze.py"
+    },
+    {
+      "id": "P10-T05",
+      "phase": "P10",
+      "name": "inverse_units",
+      "expected": "Target inverse transformation restores correct units and scales.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p10_inverse_units.py"
+    },
+    {
+      "id": "P10-T06",
+      "phase": "P10",
+      "name": "calibration_crossing",
+      "expected": "Post-calibration ordering and raw/repaired scores are recorded.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p10_calibration_crossing.py"
+    },
+    {
+      "id": "P10-T07",
+      "phase": "P10",
+      "name": "risk_horizon",
+      "expected": "Mean/covariance/controller use compatible horizons and PSD checks.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p10_risk_horizon.py"
+    },
+    {
+      "id": "P10-T08",
+      "phase": "P10",
+      "name": "feasible_fallback",
+      "expected": "Optimizer/nontradable failure produces the preregistered feasible fallback.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p10_feasible_fallback.py"
+    },
+    {
+      "id": "P11-T01",
+      "phase": "P11",
+      "name": "single_lease",
+      "expected": "Only one heavy PyTorch/tree/GPU-evaluation process can own cuda:0.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p11_single_lease.py"
+    },
+    {
+      "id": "P11-T02",
+      "phase": "P11",
+      "name": "compile_parity",
+      "expected": "Compile speed is compared only after numeric parity, including cold cost.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p11_compile_parity.py"
+    },
+    {
+      "id": "P11-T03",
+      "phase": "P11",
+      "name": "accumulation",
+      "expected": "Microbatch retries preserve or explicitly requalify effective optimization semantics.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p11_accumulation.py"
+    },
+    {
+      "id": "P11-T04",
+      "phase": "P11",
+      "name": "sample_counts",
+      "expected": "Useful samples exclude padding and match data/optimizer-step accounting.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p11_sample_counts.py"
+    },
+    {
+      "id": "P11-T05",
+      "phase": "P11",
+      "name": "spawn_context",
+      "expected": "CUDA subprocesses use spawn/forkserver and do not inherit poisoned fork state.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p11_spawn_context.py"
+    },
+    {
+      "id": "P11-T06",
+      "phase": "P11",
+      "name": "resume_state",
+      "expected": "Interrupted run restores optimizer/scheduler/RNG/sampler at a verified boundary.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p11_resume_state.py"
+    },
+    {
+      "id": "P11-T07",
+      "phase": "P11",
+      "name": "partial_commit",
+      "expected": "Corrupt/incomplete checkpoints are quarantined, not accepted by filename.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p11_partial_commit.py"
+    },
+    {
+      "id": "P11-T08",
+      "phase": "P11",
+      "name": "shutdown_pause",
+      "expected": "Unexplained/repeated host shutdown pauses heavy execution, not infinite restart.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p11_shutdown_pause.py"
+    },
+    {
+      "id": "P12-T01",
+      "phase": "P12",
+      "name": "final_default_denial",
+      "expected": "Final loader rejects development and unauthorized target reads.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p12_final_default_denial.py"
+    },
+    {
+      "id": "P12-T02",
+      "phase": "P12",
+      "name": "freeze_hashes",
+      "expected": "Data/features/models/calibration/controller/code/environment match receipt.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p12_freeze_hashes.py"
+    },
+    {
+      "id": "P12-T03",
+      "phase": "P12",
+      "name": "final_all_models",
+      "expected": "The pre-registered comparison family is evaluated, not only a favored candidate.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p12_final_all_models.py"
+    },
+    {
+      "id": "P12-T04",
+      "phase": "P12",
+      "name": "no_final_selection",
+      "expected": "Final results do not select seeds/thresholds/architectures.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p12_no_final_selection.py"
+    },
+    {
+      "id": "P12-T05",
+      "phase": "P12",
+      "name": "same_receipt_resume",
+      "expected": "Partial final inference resumes only with the same scientific receipt.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p12_same_receipt_resume.py"
+    },
+    {
+      "id": "P12-T06",
+      "phase": "P12",
+      "name": "final_access_log",
+      "expected": "Every final target read and output exposure is recorded.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p12_final_access_log.py"
+    },
+    {
+      "id": "P12-T07",
+      "phase": "P12",
+      "name": "post_unblind_fix",
+      "expected": "After-unblinding bug fixes preserve prior results and correct all affected models.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p12_post_unblind_fix.py"
+    },
+    {
+      "id": "P12-T08",
+      "phase": "P12",
+      "name": "prospective_clock",
+      "expected": "Historical replay cannot be marked prospective.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p12_prospective_clock.py"
+    },
+    {
+      "id": "P13-T01",
+      "phase": "P13",
+      "name": "paired_blocks",
+      "expected": "Same bootstrap dates and all synchronized assets are used for both models.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p13_paired_blocks.py"
+    },
+    {
+      "id": "P13-T02",
+      "phase": "P13",
+      "name": "seeds_not_dates",
+      "expected": "Training seeds are not treated as independent market samples.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p13_seeds_not_dates.py"
+    },
+    {
+      "id": "P13-T03",
+      "phase": "P13",
+      "name": "multiplicity",
+      "expected": "Adjustment uses the frozen complete contrast family.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p13_multiplicity.py"
+    },
+    {
+      "id": "P13-T04",
+      "phase": "P13",
+      "name": "power_interpretation",
+      "expected": "Insufficient power is not claimed as equivalence.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p13_power_interpretation.py"
+    },
+    {
+      "id": "P13-T05",
+      "phase": "P13",
+      "name": "drifted_turnover",
+      "expected": "Turnover is measured from price-drifted holdings.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p13_drifted_turnover.py"
+    },
+    {
+      "id": "P13-T06",
+      "phase": "P13",
+      "name": "self_financing",
+      "expected": "Shares/cash/splits/dividends/fees reconcile within frozen tolerance.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p13_self_financing.py"
+    },
+    {
+      "id": "P13-T07",
+      "phase": "P13",
+      "name": "cost_double_count",
+      "expected": "Spread/slippage are not deducted twice from fill and cost records.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p13_cost_double_count.py"
+    },
+    {
+      "id": "P13-T08",
+      "phase": "P13",
+      "name": "source_attribution",
+      "expected": "Source ablation/gates are not represented as exact causal P&L attribution.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p13_source_attribution.py"
+    },
+    {
+      "id": "P14-T01",
+      "phase": "P14",
+      "name": "metric_lineage",
+      "expected": "Every reported number links to a validated metric and artifact hash.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p14_metric_lineage.py"
+    },
+    {
+      "id": "P14-T02",
+      "phase": "P14",
+      "name": "no_fake_panels",
+      "expected": "Blocked/missing metrics are shown as missing, never fabricated zeros or PASS.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p14_no_fake_panels.py"
+    },
+    {
+      "id": "P14-T03",
+      "phase": "P14",
+      "name": "all_results",
+      "expected": "Negative results and all registered comparisons are retained.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p14_all_results.py"
+    },
+    {
+      "id": "P14-T04",
+      "phase": "P14",
+      "name": "exploratory_label",
+      "expected": "Post-hoc slices/cases are not presented as confirmatory.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p14_exploratory_label.py"
+    },
+    {
+      "id": "P14-T05",
+      "phase": "P14",
+      "name": "reproduction",
+      "expected": "Fresh-environment reproduction works for the declared evidence tier.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p14_reproduction.py"
+    },
+    {
+      "id": "P14-T06",
+      "phase": "P14",
+      "name": "completeness_vector",
+      "expected": "Implementation/data/GPU/final/economics/forward/AWS states remain separate.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p14_completeness_vector.py"
+    },
+    {
+      "id": "P14-T07",
+      "phase": "P14",
+      "name": "claims_scope",
+      "expected": "No live alpha, multi-GPU, proprietary-data or cloud-operation claim without evidence.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p14_claims_scope.py"
+    },
+    {
+      "id": "P14-T08",
+      "phase": "P14",
+      "name": "future_cards",
+      "expected": "Future proposals use new data/protocol and do not retune the consumed final test.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p14_future_cards.py"
+    },
+    {
+      "id": "P15-T01",
+      "phase": "P15",
+      "name": "prediction_before_target",
+      "expected": "Forward record timestamp precedes outcome publication.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p15_prediction_before_target.py"
+    },
+    {
+      "id": "P15-T02",
+      "phase": "P15",
+      "name": "append_only",
+      "expected": "Bad weeks and failed executions are not erased.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p15_append_only.py"
+    },
+    {
+      "id": "P15-T03",
+      "phase": "P15",
+      "name": "version_cohort",
+      "expected": "New models get a new prospective version/cohort.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p15_version_cohort.py"
+    },
+    {
+      "id": "P15-T04",
+      "phase": "P15",
+      "name": "late_run",
+      "expected": "A late job is marked missed/late rather than backdated.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p15_late_run.py"
+    },
+    {
+      "id": "P15-T05",
+      "phase": "P15",
+      "name": "outage_policy",
+      "expected": "Missing/invalid source applies the frozen age/fallback rule.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p15_outage_policy.py"
+    },
+    {
+      "id": "P15-T06",
+      "phase": "P15",
+      "name": "no_broker",
+      "expected": "Forward workflow cannot submit real broker orders.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p15_no_broker.py"
+    },
+    {
+      "id": "P15-T07",
+      "phase": "P15",
+      "name": "small_sample",
+      "expected": "A few weeks do not automatically become proof of alpha.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p15_small_sample.py"
+    },
+    {
+      "id": "P15-T08",
+      "phase": "P15",
+      "name": "one_iteration",
+      "expected": "forward-once performs one iteration, without installing an unrequested daemon.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_p15_one_iteration.py"
+    },
+    {
+      "id": "V3-T01",
+      "phase": "P00",
+      "name": "native_interactive",
+      "expected": "Native PowerShell launcher uses codex without exec or initial prompt.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_native_interactive.py"
+    },
+    {
+      "id": "V3-T02",
+      "phase": "P00",
+      "name": "approval_semantics",
+      "expected": "on-request plus approvals_reviewer=auto_review and workspace-write; no never/yolo fallback.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_approval_semantics.py"
+    },
+    {
+      "id": "V3-T03",
+      "phase": "P00",
+      "name": "repo_exact",
+      "expected": "Canonical code remains at selected Windows Downloads repo; heavy state uses separate ext4 runtime.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_repo_exact.py"
+    },
+    {
+      "id": "V3-T04",
+      "phase": "P00",
+      "name": "no_overwrite_resume",
+      "expected": "Resume never replaces user-edited repo files with handoff originals.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_no_overwrite_resume.py"
+    },
+    {
+      "id": "V3-T05",
+      "phase": "P00",
+      "name": "wsl2_only",
+      "expected": "GPU compute requires verified WSL2 and non-root user.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_wsl2_only.py"
+    },
+    {
+      "id": "V3-T06",
+      "phase": "P00",
+      "name": "cuda_objectives",
+      "expected": "Torch mean/pinball backward plus LGB and XGB mean/all required quantiles execute on CUDA.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_cuda_objectives.py"
+    },
+    {
+      "id": "V3-T07",
+      "phase": "P00",
+      "name": "physical_host_disk",
+      "expected": "Validate host volume that contains WSL VHDX, not only C: or df.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_physical_host_disk.py"
+    },
+    {
+      "id": "V3-T08",
+      "phase": "P00",
+      "name": "code_runtime_lineage",
+      "expected": "Windows code path and external runtime recorded, with no ambiguous editable clone.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_code_runtime_lineage.py"
+    },
+    {
+      "id": "V3-T09",
+      "phase": "P05",
+      "name": "nested_track_split",
+      "expected": "Nested-B has its own valid 2021/2022 folds and short-history power limits.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_nested_track_split.py"
+    },
+    {
+      "id": "V3-T10",
+      "phase": "P05",
+      "name": "outcome_blind_eligibility",
+      "expected": "Asset/date eligibility fixed before outcome observations.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_outcome_blind_eligibility.py"
+    },
+    {
+      "id": "V3-T11",
+      "phase": "P05",
+      "name": "unseen_entity_transport",
+      "expected": "Zero-shot group holdout cannot use target-group label-fitted embedding or normalizer.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_unseen_entity_transport.py"
+    },
+    {
+      "id": "V3-T12",
+      "phase": "P13",
+      "name": "shared_risk_scale",
+      "expected": "Models in a contrast share one train-only risk normalizer.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_shared_risk_scale.py"
+    },
+    {
+      "id": "V3-T13",
+      "phase": "P13",
+      "name": "missing_prediction",
+      "expected": "Missing/failed model output does not silently remove hard dates.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_missing_prediction.py"
+    },
+    {
+      "id": "V3-T14",
+      "phase": "P09",
+      "name": "source_mask_dependency",
+      "expected": "Source outage recomputes all descendants including derived proxy features.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_source_mask_dependency.py"
+    },
+    {
+      "id": "V3-T15",
+      "phase": "P10",
+      "name": "ensemble_then_calibrate",
+      "expected": "Calibration fitted to final selected ensemble, not reused from incompatible individual model.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_ensemble_then_calibrate.py"
+    },
+    {
+      "id": "V3-T16",
+      "phase": "P13",
+      "name": "cost_return_units",
+      "expected": "One-way cost applied to traded notional and return horizon consistently.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_cost_return_units.py"
+    },
+    {
+      "id": "V3-T17",
+      "phase": "P05",
+      "name": "eia_horizon",
+      "expected": "EIA next-release target is not a same-week value already known at decision.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_eia_horizon.py"
+    },
+    {
+      "id": "V3-T18",
+      "phase": "P08",
+      "name": "stage_cache_keys",
+      "expected": "Changing reporting or postprocessing does not invalidate a raw acquisition/model fit unrelated to it.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_stage_cache_keys.py"
+    },
+    {
+      "id": "V3-T19",
+      "phase": "P08",
+      "name": "semantic_retry",
+      "expected": "OOM retry preserves effective batch and loss normalization or is a new registered configuration.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_semantic_retry.py"
+    },
+    {
+      "id": "V3-T20",
+      "phase": "P14",
+      "name": "branch_completion",
+      "expected": "Missing P1 prices blocks economics but not prediction metrics or incremental report.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_branch_completion.py"
+    },
+    {
+      "id": "V3-T21",
+      "phase": "P11",
+      "name": "dev_only_systems",
+      "expected": "E10 performance tuning never accesses reserved labels.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_dev_only_systems.py"
+    },
+    {
+      "id": "V3-T22",
+      "phase": "P12",
+      "name": "final_authorization",
+      "expected": "Auto action reviewer is not scientific holdout-read authority.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_final_authorization.py"
+    },
+    {
+      "id": "V3-T23",
+      "phase": "P12",
+      "name": "single_final_receipt",
+      "expected": "One authorized frozen candidate batch supports same-hash retries, no iterative test selection.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_single_final_receipt.py"
+    },
+    {
+      "id": "V3-T24",
+      "phase": "P11",
+      "name": "vectorized_seed_rng",
+      "expected": "Optional vectorized models have independent RNG/optimizer and match serial correctness.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_vectorized_seed_rng.py"
+    },
+    {
+      "id": "V3-T25",
+      "phase": "P14",
+      "name": "no_gpu_claim_from_fixture",
+      "expected": "Synthetic CUDA smoke and real-data research evidence have separate statuses.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_no_gpu_claim_from_fixture.py"
+    },
+    {
+      "id": "V3-T26",
+      "phase": "P09",
+      "name": "budget_receipt",
+      "expected": "Full task plan requires measured pilot costs and bounded configured budget.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_budget_receipt.py"
+    },
+    {
+      "id": "V3-T27",
+      "phase": "P09",
+      "name": "proposal_fairness",
+      "expected": "Method comparison has age-aware all-information and capacity-matched concat baselines.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_proposal_fairness.py"
+    },
+    {
+      "id": "V3-T28",
+      "phase": "P12",
+      "name": "import_graph",
+      "expected": "Training packages cannot import unrestricted final target loader.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_import_graph.py"
+    },
+    {
+      "id": "V3-T29",
+      "phase": "P15",
+      "name": "future_version",
+      "expected": "New method after unblinding uses new protocol/cohort, not overwritten historical claim.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_future_version.py"
+    },
+    {
+      "id": "V3-T30",
+      "phase": "P00",
+      "name": "node_supply_chain",
+      "expected": "Portable Node official archive matches official SHA256 and extraction validates paths.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_node_supply_chain.py"
+    },
+    {
+      "id": "V3-T31",
+      "phase": "P00",
+      "name": "source_install_record",
+      "expected": "Rootless dependencies and source builds recorded; system driver/config untouched.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_source_install_record.py"
+    },
+    {
+      "id": "V3-T32",
+      "phase": "P14",
+      "name": "completion_evidence",
+      "expected": "Software, public data, CUDA, prediction, economics, final and forward statuses remain distinct.",
+      "implementation_status": "REQUIRED_NOT_IMPLEMENTED",
+      "test_result": "NOT_RUN",
+      "suggested_file": "tests/acceptance/test_v3_completion_evidence.py"
+    }
+  ]
+}

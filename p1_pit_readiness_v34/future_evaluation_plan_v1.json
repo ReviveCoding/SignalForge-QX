@@ -1,0 +1,89 @@
+{
+  "calibration_id": "596f2e737c62ae4a31c5bce236ec2db03a9cc0f0d2ca447f5d06cacb643c703a",
+  "calibration_or_model_outcome_retuning": false,
+  "calibration_sha256": "6c2b062d126bbcfa53c2e9e58b0ae68424c1c6f6e9e35a877e7069a184e87079",
+  "candidate": "fixed SIA v2 models plus train-only mature SIA OOF calibration v34; NOT promoted",
+  "comparison": "fixed strong statistical reference; shared train-only target scales; exact eligible grid",
+  "final_access": false,
+  "future_cohorts": {
+    "assets": 8,
+    "distinct_mature_dates_per_block": 52,
+    "independent_date_not_seed_unit": true,
+    "per_track_untouched_blocks": 2
+  },
+  "historical_candidate_bundles": [
+    {
+      "model_sha256": "50b29de4726c37a658982144bace020c220f3495dda963c9e2653e0639e052c9",
+      "prediction_sha256": "79317a648a86e982a1875a240258b29c2d469aee501123e7e4a33c9475492b18",
+      "receipt_sha256": "94842eeaa746d04d11141911204c51b5e870a297374c7eb91d943cefaf51684f",
+      "relative_bundle": "artifacts/v33_minimal_v2_models/acd3259baa8d066b65ec1879b76e58fa0a7b3f557a501a8da6a5c1bf07876921",
+      "seed": 11,
+      "track": "Main-A",
+      "year": 2020
+    },
+    {
+      "model_sha256": "bb7b609ca8b952297ac6bc9aadae0f9ad2dcf50e31ea0e5556ed53817afcf309",
+      "prediction_sha256": "e32ac14eebb9e423bfea5c435d77062229a136d99751579085096f77b2ae939a",
+      "receipt_sha256": "50c738b30ca7fd5e1506c420323f70f1bc6f907fbd22daaa4e69749e103049b8",
+      "relative_bundle": "artifacts/v33_minimal_v2_models/b4972d07599ffc4c91e2cf5a9bfac9794e373d25fa1761802b1ab7a7baa5b4da",
+      "seed": 37,
+      "track": "Main-A",
+      "year": 2020
+    },
+    {
+      "model_sha256": "f254537c8d4f7bb4e2a79d2ad669147c3e4f985405dffa4f7649b345da67aff8",
+      "prediction_sha256": "ef0face64d9eff9b4e55e6f1d91389034d88837bae735f2ffb558a9cc274dacd",
+      "receipt_sha256": "c8e9d9c041d4dcc954f7d28e0ef2f8c656bf0ee6d5842b0f94249a321fef50f9",
+      "relative_bundle": "artifacts/v33_minimal_v2_models/71650850487b83057f4f68f25bc08c93319410f1098ce91e183b4ad3bf0e4a8b",
+      "seed": 71,
+      "track": "Main-A",
+      "year": 2020
+    },
+    {
+      "model_sha256": "b683656c2a65946a646ac06b98e2127c865ac19ec0d8cfa0ad50e2151e29ce30",
+      "prediction_sha256": "da3ab0e0816e2401bce49f5facf426828f881c1e7589430d8aafcdf01d177dbd",
+      "receipt_sha256": "ce1654d4ec8a70b9bb66e376cf1b4d7179047da5640869d4682a69de788b984f",
+      "relative_bundle": "artifacts/v33_minimal_v2_models/8cdb8bca4c702fa18c1d3ed7fadd4f1812fa71346fee743423f8f6f82144f5dd",
+      "seed": 11,
+      "track": "Nested-B",
+      "year": 2022
+    },
+    {
+      "model_sha256": "0f38b37fc95f0b8ce9f4f6b5634c85ad899c2b3415b9c2217bd3ff4668a1c43e",
+      "prediction_sha256": "8bd180aa5165f29e4a002855580bab01efbc7d3d6d966b291059c3b31cfc6ef0",
+      "receipt_sha256": "1c6d963636d0457133544497988da7088bb05991aedaafd47768bb6b82458aa3",
+      "relative_bundle": "artifacts/v33_minimal_v2_models/381e74c5e38da6908ce15eb0e9d3756ddb6b129c35111489fa9774788ed9c394",
+      "seed": 37,
+      "track": "Nested-B",
+      "year": 2022
+    },
+    {
+      "model_sha256": "c0f39fa459c2518fecd0eabc390dd75117046fbbae3b4d81a990a356741128c6",
+      "prediction_sha256": "94be145dc15db883bc1c3c976f7c2c0bd3114f980379b507bd3449df90a3c0ed",
+      "receipt_sha256": "621286bc45c6013be0d7b34ae1f84b17ae2c973a87065e7316a484c45133900b",
+      "relative_bundle": "artifacts/v33_minimal_v2_models/2b71536ae107daa92a8bd96cdbc9111a7fbcfc23f0acd16dfdcb3405d566fbbc",
+      "seed": 71,
+      "track": "Nested-B",
+      "year": 2022
+    }
+  ],
+  "metric": "date_equal_asset_equal_seed_average_normalized_pinball",
+  "outcome_access": false,
+  "plan_id": "6cd9283d71a6e1fcccb26a6b01474db3d0b1807bccb6ec207fa6ecde3c6dca81",
+  "requires": [
+    "verified operational freeze with actual timestamp",
+    "authenticated per-version first-public source clocks",
+    "per-cutoff mature labels and source-qualified forward inputs",
+    "independent governance",
+    "two actual future untouched 52-date cohorts"
+  ],
+  "reserved_access": false,
+  "scope": "evaluation design freeze only, not scientific/operational freeze; old 2020/2022 not independent evidence",
+  "seeds": [
+    11,
+    37,
+    71
+  ],
+  "study_id": "sgqx-v34-prospective-calibrated-SIA-readiness-v1",
+  "training_authorized_by_this_plan": false
+}
