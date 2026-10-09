@@ -1,28 +1,32 @@
-# SignalForge-QX v3.8.0-research
+# SignalForge-QX v3.8.1-research
 
-**Research pre-release. Engineering and retrospective diagnostics completed in stated scopes; scientific final qualification remains blocked.**
+**Public research pre-release | Documentation completeness patch**
 
-## Contents
+This release adds **seven missing aggregate-only technical reports** that were excluded from the first v3.8.0 publication by an overbroad reports/ Git ignore pattern. Those reports already existed in the privacy-reviewed publication staging directory; this patch commits them and anchors the ignore pattern to the private top-level reports directory. The original v3.8.0 annotated tag is preserved, not rewritten.
 
-- Core source-aware multi-asset probabilistic forecasting algorithms and SIA/BAR extensions.
-- Mature OOF calibration code, publisher-data provenance gates, licensed-scope import validators, and maturity-aware monitoring diagnostics.
-- Seven technical report narratives, five aggregated numerical tables and three model-risk figures.
-- Privacy-preserving code snapshot excluding confidential raw data, internal model caches, credentials, ledger data, and all Codex/LLM prompts.
-- Public CI that validates Python syntax and JSON structure only.
+## Included in the public snapshot
 
-## Development results (lower normalized pinball loss is better)
+- Python source for source-aware quantitative forecasting, SIA, BAR, point-in-time evidence contracts, mature OOF calibration, official-source provenance qualification, and post-hoc model-risk evaluation.
+- **Seven public technical reports**, five aggregate numerical tables, and three graphical diagnostics.
+- Offline GitHub Actions Python syntax and JSON structural validation.
 
-| Historical development track | Strong I0 | SIA | BAR | Calibrated SIA |
-|---|---:|---:|---:|---:|
-| Main-A 2020 | 0.498910 | **0.493252** | 0.500807 | 0.494581 |
-| Nested-B 2022 | **0.272733** | 0.274078 | 0.274928 | 0.275097 |
+## Retrospective development measurements
 
-SIA improved NPL 1.134% versus the strongest baseline on Main-A, but underperformed that baseline by 0.493% on Nested-B. Nested-B SIA was 15.13% better than the older RGMF comparator, not 15.13% better than the strongest baseline.
+| Normalized pinball loss (smaller is better) | Main-A 2020 | Nested-B 2022 |
+|---|---:|---:|
+| Strong I0 comparator | 0.498910 | **0.272733** |
+| Source-age SIA | **0.493252** | 0.274078 |
+| BAR | 0.500807 | 0.274928 |
+| Calibrated SIA | 0.494581 | 0.275097 |
 
-Other measured results: 120 genuine SIA CUDA mature-OOF fits (12,168 OOF rows), 12,480 matched five-model development predictions, 4,737 historical monitor replay records, and 98 passing v3.8 scoped checks. No new training occurred during v3.8.
+SIA reduced NPL by **1.134%** versus the strongest baseline on Main-A; it was **0.493% worse** than the strongest baseline on Nested-B, despite a **15.13%** relative improvement against the older RGMF there. BAR and added quantile calibration were not promoted.
 
-## Critical limits
+Research reproducibility evidence: 120 genuine CUDA OOF SIA fits and saved checkpoint replays, 12,168 OOF forecast rows, 12,480 aligned development forecasts, 4,737 historical dry-run maturity-aware monitoring replay rows, and 98 passing scoped v3.8 diagnostics. These measurements **were not re-executed from the public snapshot** and v3.8 added no new model training.
 
-Retrospective **Tier-B reconstructed-clock development** results are not independent future validation. New Tier-A certifications **0**; fully qualified P1 sessions **0/27,088**; prospective forecasts **0**. No Sharpe, alpha, real P&L, production trading, controlled monitoring false-positive rate or external independent governance approval is claimed.
+## Nonqualification and data boundaries
 
-Public source paths were privacy-redacted and may not match original frozen execution hashes. See [reproducibility](docs/REPRODUCIBILITY.md) and [claim boundaries](docs/PUBLICATION_BOUNDARY.md).
+This is a pre-release of **retrospective Tier-B reconstructed-clock research**, not a production release or independently qualified financial model. Certified original first-public Tier-A events: **0**. Fully qualified P1 economic sessions: **0/27,088**. Actual independently frozen future market forecasts and mature forward observations: **0**. No verified real trading P&L, Sharpe, alpha, operational calibration FPR, independent reviewer signoff, or final unsealing.
+
+Vendor datasets, private model/checkpoint bundles, internal compute ledgers, API tokens, unpublished event-version histories, private prompts and raw price/label panels are excluded. Local machine username occurrences in public code were redacted, so public code is **not byte-identical to internal frozen research source**.
+
+See [README](https://github.com/ReviveCoding/SignalForge-QX/blob/v3.8.1-research/README.md), [reproducibility](https://github.com/ReviveCoding/SignalForge-QX/blob/v3.8.1-research/docs/REPRODUCIBILITY.md), [publication boundaries](https://github.com/ReviveCoding/SignalForge-QX/blob/v3.8.1-research/docs/PUBLICATION_BOUNDARY.md), and [v3.8 model-risk report](https://github.com/ReviveCoding/SignalForge-QX/blob/v3.8.1-research/evidence/reports/V38_INCREMENTAL_MODEL_RISK_AND_CALIBRATION_REPORT.md).

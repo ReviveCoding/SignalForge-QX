@@ -75,4 +75,4 @@ The GitHub Actions workflow runs only dependency-free Python syntax and JSON che
 
 No open-source license grant is included in this public snapshot. Contact the repository owner for reuse rights.
 
-**Release line:** v3.8.0-research is a **pre-release research engineering milestone**, not an independently validated investment or trading system.
+**Release line:** v3.8.1-research is a **pre-release research engineering milestone**, not an independently validated investment or trading system.
