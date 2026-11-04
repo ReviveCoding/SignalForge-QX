@@ -8,7 +8,7 @@ import math
 import sqlite3
 import urllib.robotparser
 import zipfile
-from datetime import UTC, datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pandas as pd

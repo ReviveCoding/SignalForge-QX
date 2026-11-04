@@ -50,7 +50,7 @@ def csv(name, frame):
 
 
 def progress(stage, detail):
-    from datetime import datetime, timezone
+    from datetime import datetime
 
     p = OUT / "live_progress.json"
     d = readj(p) if p.exists() else {"events": [], "training": 0, "downloads": 0, "claim": CLAIM}

@@ -4,7 +4,7 @@ import concurrent.futures
 import copy
 import json
 import sqlite3
-from datetime import UTC, datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 
 import pytest
 

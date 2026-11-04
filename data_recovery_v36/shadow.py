@@ -5,7 +5,7 @@ import json
 import math
 import sqlite3
 import sys
-from datetime import UTC, datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 from qualification_v35.core import canonical, clock, sha, valid_sha

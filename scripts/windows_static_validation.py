@@ -4,7 +4,7 @@ import ast
 import hashlib
 import json
 import sys
-from datetime import UTC, datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 

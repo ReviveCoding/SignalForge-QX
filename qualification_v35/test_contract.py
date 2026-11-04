@@ -4,7 +4,7 @@ import base64
 import copy
 import json
 import subprocess
-from datetime import UTC, datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 import pytest

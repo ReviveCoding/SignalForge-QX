@@ -1,6 +1,6 @@
 """Mature-label causal monitor replay. No model/calibrator fits and no operational alerts."""
 
-from datetime import UTC, datetime, timezone
+from datetime import UTC, datetime
 
 from .diagnostics import date_series, enrich
 from .source import *

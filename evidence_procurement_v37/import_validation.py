@@ -4,7 +4,7 @@ import argparse
 import json
 import sys
 import uuid
-from datetime import UTC, datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 from evidence_procurement_v37.core import accept, register_import

@@ -8,7 +8,7 @@ import os
 import sqlite3
 import time
 from contextlib import contextmanager
-from datetime import UTC, datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 from signalforge.runtime import code_hash, digest, ensure_gpu_owner, file_hash, gpu_lease
