@@ -49,10 +49,13 @@ def paired_time_block_ci(date_level_improvement, block_length=8, n_boot=2000, se
     count = int(np.ceil(len(x) / block_length))
     results = np.empty(n_boot)
     offset = np.arange(block_length)
-    for i in range(n_boot):
-        starts = rng.integers(0, len(x), size=count)
-        indices = ((starts[:, None] + offset) % len(x)).ravel()[: len(x)]
-        results[i] = x[indices].mean()
+    working_bytes_per_draw = count * block_length * 24 + count * 8 + len(x) * 8
+    batch_size = max(1, (8 * 1024 * 1024) // working_bytes_per_draw)
+    for first in range(0, n_boot, batch_size):
+        batch_draws = min(batch_size, n_boot - first)
+        starts = rng.integers(0, len(x), size=(batch_draws, count))
+        indices = ((starts[:, :, None] + offset) % len(x)).reshape(batch_draws, -1)[:, : len(x)]
+        results[first : first + batch_draws] = x[indices].mean(axis=1)
     lo, hi = np.quantile(results, [0.025, 0.975])
     return {
         "mean_improvement": float(x.mean()),
