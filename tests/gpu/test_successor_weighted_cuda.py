@@ -1,11 +1,14 @@
 """The pilot crash was on weighted quantiles, unlike unweighted smoke tests."""
+
 import subprocess
 import sys
-from signalforge.runtime import paths,gpu_lease
+
+from signalforge.runtime import gpu_lease, paths
+
 
 def test_successor_private_cuda_weighted_quantile_subprocess():
-    repo,runtime=paths()
-    program='''
+    repo, runtime = paths()
+    program = """
 import numpy as np
 from signalforge.runtime import paths
 from signalforge.successor_backend import activate_backend
@@ -20,14 +23,15 @@ weights=np.full(4576,0.125)
 m=lgb.train({'device_type':'cuda','objective':'quantile','alpha':0.05,'lambda_l2':1.0,'num_leaves':15,'max_bin':63,'min_data_in_leaf':10,'num_threads':4,'verbosity':-1,'seed':11},lgb.Dataset(x,label=y,weight=weights),num_boost_round=4)
 assert m.params['device_type']=='cuda'
 assert np.isfinite(m.predict(x[:8])).all()
-'''
+"""
     with gpu_lease(runtime):
-        result=subprocess.run([sys.executable,'-c',program],capture_output=True,text=True,timeout=90)
-    assert result.returncode==0,result.stderr
+        result = subprocess.run([sys.executable, "-c", program], capture_output=True, text=True, timeout=90)
+    assert result.returncode == 0, result.stderr
+
 
 def test_weighted_cuda_quantile_tail_boundaries_use_sorted_support():
-    repo,runtime=paths()
-    program='''
+    repo, runtime = paths()
+    program = """
 import numpy as np
 from signalforge.runtime import paths
 from signalforge.successor_backend import activate_backend
@@ -41,6 +45,7 @@ for alpha,expected in [(0.05,2.125),(0.95,5.)]:
  prediction=model.predict(x)
  assert model.params['device_type']=='cuda'
  assert np.allclose(prediction,expected,rtol=1e-6),(alpha,prediction,expected)
-'''
-    with gpu_lease(runtime):result=subprocess.run([sys.executable,'-c',program],capture_output=True,text=True,timeout=60)
-    assert result.returncode==0,result.stdout+result.stderr
+"""
+    with gpu_lease(runtime):
+        result = subprocess.run([sys.executable, "-c", program], capture_output=True, text=True, timeout=60)
+    assert result.returncode == 0, result.stdout + result.stderr

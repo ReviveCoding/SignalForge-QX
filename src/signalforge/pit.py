@@ -1,5 +1,7 @@
 """Release-aware event selection. Availability timestamps must be supplied, not guessed."""
+
 from __future__ import annotations
+
 import numpy as np
 import pandas as pd
 
@@ -10,7 +12,7 @@ def _aware_utc(values, name: str) -> pd.Series:
     for value in seq:
         if pd.isna(value) or pd.Timestamp(value).tzinfo is None:
             raise ValueError(f"{name} requires non-null timezone-aware timestamps")
-    return pd.to_datetime(seq, utc=True, format='mixed')
+    return pd.to_datetime(seq, utc=True, format="mixed")
 
 
 def asof_snapshot(events: pd.DataFrame, decision_time, strict: bool = False) -> pd.DataFrame:
@@ -34,8 +36,8 @@ def asof_snapshot(events: pd.DataFrame, decision_time, strict: bool = False) -> 
     df["reference_time"] = _aware_utc(df["reference_time"], "reference_time").to_numpy()
     df["available_at"] = _aware_utc(df["available_at"], "available_at").to_numpy()
     # Explicitly restore pandas UTC dtypes after positional assignment.
-    df["reference_time"] = pd.to_datetime(df["reference_time"], utc=True, format='mixed')
-    df["available_at"] = pd.to_datetime(df["available_at"], utc=True, format='mixed')
+    df["reference_time"] = pd.to_datetime(df["reference_time"], utc=True, format="mixed")
+    df["available_at"] = pd.to_datetime(df["available_at"], utc=True, format="mixed")
     if (df["reference_time"] > df["available_at"]).any():
         raise ValueError("Observed-data references cannot postdate availability")
     if strict:
@@ -50,8 +52,8 @@ def asof_snapshot(events: pd.DataFrame, decision_time, strict: bool = False) -> 
     # A newly released revision to an old reference must not displace newer data.
     df = df.drop_duplicates(keys + ["reference_time"], keep="last")
     df = df.sort_values(keys + ["reference_time"]).drop_duplicates(keys, keep="last")
-    df["reference_age_days"] = (t.tz_convert("UTC") - df["reference_time"]).dt.total_seconds()/86400
-    df["release_age_days"] = (t.tz_convert("UTC") - df["available_at"]).dt.total_seconds()/86400
+    df["reference_age_days"] = (t.tz_convert("UTC") - df["reference_time"]).dt.total_seconds() / 86400
+    df["release_age_days"] = (t.tz_convert("UTC") - df["available_at"]).dt.total_seconds() / 86400
     return df.reset_index(drop=True)
 
 

@@ -1,6 +1,10 @@
 from pathlib import Path
-p=Path('src/signalforge/correction_cache.py');text=p.read_text();start=text.index('def corrected_cache(');end=text.index('\ndef adopt_corrected',start)
-replacement='''def dataset_proofs(old,ox,folds,x):
+
+p = Path("src/signalforge/correction_cache.py")
+text = p.read_text()
+start = text.index("def corrected_cache(")
+end = text.index("\ndef adopt_corrected", start)
+replacement = """def dataset_proofs(old,ox,folds,x):
     proofs={}
     for year,fold in folds.items():
         cutoff=pd.Timestamp(f'{year}-01-01T00:00Z')-pd.Timedelta(nanoseconds=1)
@@ -63,7 +67,10 @@ def corrected_cache(repo,runtime,folds,x,data_id):
                   {'proof.json':{'data_id':data_id,'parent_proofs':parent_proofs,'parents':cache,'numeric_dependencies':current}},
                   {'purpose':'exact_input_stage_reuse','final_access':False})
     return cache,proof_id
-'''
-text=text[:start]+replacement+text[end:]
-text=text.replace("not proof['proofs'][f'{partition}:{year}']['exact_match']", "not proof['parent_proofs'][key]['exact_match']")
+"""
+text = text[:start] + replacement + text[end:]
+text = text.replace(
+    "not proof['proofs'][f'{partition}:{year}']['exact_match']",
+    "not proof['parent_proofs'][key]['exact_match']",
+)
 p.write_text(text)
